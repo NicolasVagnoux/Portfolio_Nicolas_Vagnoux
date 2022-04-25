@@ -1,12 +1,14 @@
 import "./App.scss";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Presentation from "./components/Presentation";
 
 function App() {
   return (
-    <div className="app">
-      <p className="app__text">
-        Ce template est bien configuré pour vos applications front-end avec
-        Vite, Sass et Vercel
-      </p>
+    <div>
+      <Navbar />
+      <Home />
+      <Presentation />
     </div>
   );
 }
