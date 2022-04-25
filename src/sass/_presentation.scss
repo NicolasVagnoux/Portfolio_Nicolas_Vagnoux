@@ -1,26 +1,26 @@
 .presentation {
-    height: 100vh;
-    background-image: url('assets/2-spinsky.jpg');
-    background-size: cover;
-    background-position: bottom;
-    img {
-        width: 100%;
-        height: 11rem;
-    }
-    &__intro {
-        width: 70%;
-        font-family: 'Varela Round';
-        font-style: italic;
-        color: aliceblue;
-        font-size: 1.8rem;
-        margin: auto;
-        position: relative;
-        top: 4rem;
-        text-align: center;
-        text-shadow: 5px 5px 10px black;
-        padding: 10px;
-        border: 1px solid aliceblue;
-        border-radius: 10px;
-        backdrop-filter: blur(6px);
-    }
+  height: 100vh;
+  background-image: url("assets/2-spinsky.jpg");
+  background-size: cover;
+  background-position: bottom;
+  img {
+    width: 100%;
+    height: 11rem;
+  }
+  &__intro {
+    width: 70%;
+    font-family: "Varela Round";
+    font-style: italic;
+    color: aliceblue;
+    font-size: 1.8rem;
+    margin: auto;
+    position: relative;
+    top: 4rem;
+    text-align: center;
+    text-shadow: 5px 5px 10px black;
+    padding: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+  }
 }
