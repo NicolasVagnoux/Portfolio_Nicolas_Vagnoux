@@ -1,0 +1,39 @@
+.leftbar {
+  height: 90vh;
+  width: 96px;
+  border: 2px solid aliceblue;
+  border-radius: 12px;
+  background-color: rgba(240, 248, 255, 0.1);
+  backdrop-filter: blur(3px);
+  box-shadow: 0px 0px 25px 2px black;
+  position: sticky;
+  top: 5vh;
+  margin-top: 105vh;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &__logo {
+    height: 70px;
+    width: 70px;
+    border: 0px dashed aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
+    &:hover {
+      transform: scale(1.05) rotate(-2deg);
+    }
+    img {
+      width: 60px;
+      filter: drop-shadow(2px 2px 4px black);
+    }
+  }
+  &__logo:nth-child(1) img {
+    width: 56px;
+  }
+  &__logo:nth-child(4) img {
+    width: 70px;
+  }
+}
