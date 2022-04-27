@@ -17,7 +17,7 @@ const Home = () => {
       <Link
         activeClass="active"
         to="presentation"
-        smooth={true}
+        smooth
         duration={1000}
         className="home__downButton"
       >
