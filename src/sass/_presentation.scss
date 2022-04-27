@@ -1,5 +1,5 @@
 .presentation {
-  padding-left: 96px;
+  padding-left: 116px;
   height: 100vh;
   background-image: url("assets/2-spinsky.jpg");
   background-size: cover;
@@ -20,8 +20,10 @@
     text-align: center;
     text-shadow: 5px 5px 10px black;
     padding: 10px;
-    border: 1px solid aliceblue;
-    border-radius: 10px;
-    backdrop-filter: blur(6px);
+    border: 2px solid aliceblue;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.1);
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 25px 2px black;
   }
 }

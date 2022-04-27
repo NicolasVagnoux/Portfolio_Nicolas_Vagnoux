@@ -3,7 +3,7 @@
 }
 
 .main {
-  margin-left: -96px;
+  margin-left: -116px;
 }
 
 .home {
@@ -37,7 +37,7 @@
   }
   &__downButton {
     font-family: "Varela Round";
-    color: rgb(248 250 252);
+    color: aliceblue;
     font-size: 1.8rem;
     font-style: italic;
     text-align: center;
@@ -45,7 +45,7 @@
     z-index: 1;
     margin-top: 14%;
     margin-bottom: 1%;
-    text-shadow: 5px 5px 10px black;
+    text-shadow: 8px 8px 10px black;
     padding: 2px 10px 2px 10px;
     transition: 500ms ease-in-out;
     cursor: pointer;
