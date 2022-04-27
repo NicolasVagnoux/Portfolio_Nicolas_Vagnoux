@@ -15,11 +15,11 @@ const Home = () => {
       </Typist>
       {/* <img className="homeWave" src="src/assets/home_wave.png" alt="wave" /> */}
       <Link
-        className="home__downButton"
-        to="presentation"
-        smooth={false}
-        duration={1000}
         activeClass="active"
+        to="presentation"
+        smooth={true}
+        duration={1000}
+        className="home__downButton"
       >
         <p>﹀ VENEZ DECOUVRIR MON UNIVERS ﹀</p>
       </Link>

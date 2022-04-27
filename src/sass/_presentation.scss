@@ -1,11 +1,12 @@
 .presentation {
+  padding-left: 96px;
   height: 100vh;
   background-image: url("assets/2-spinsky.jpg");
   background-size: cover;
   background-position: bottom;
+  border-top: 3px solid aliceblue;
   img {
     width: 100%;
-    height: 11rem;
   }
   &__intro {
     width: 70%;
