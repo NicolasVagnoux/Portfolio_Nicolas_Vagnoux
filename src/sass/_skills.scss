@@ -1,0 +1,18 @@
+.skills {
+  padding-left: 116px;
+  min-height: 100vh;
+  background-image: url("../assets/3-spacesky.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__title {
+    font-family: "Walter Turncoat";
+    color: aliceblue;
+    font-size: 4rem;
+    font-weight: 300;
+  }
+}
