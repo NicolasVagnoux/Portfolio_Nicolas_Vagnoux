@@ -1,29 +1,40 @@
 .presentation {
   padding-left: 116px;
-  height: 100vh;
+  padding-bottom: 3.4rem;
+  min-height: 100vh;
   background-image: url("../assets/2-spinsky.jpg");
   background-size: cover;
   background-position: bottom;
   border-top: 3px solid aliceblue;
-  img {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__intro {
-    width: 70%;
-    font-family: "Varela Round";
-    font-style: italic;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 3rem;
+      font-family: "Walter Turncoat";
+      color: aliceblue;
+      text-shadow: 5px 5px 10px black;
+    }
+    img {
+      height: 12rem;
+    }
+  }
+  &__core {
+    margin-top: -2rem;
+    width: 85%;
+    font-family: "Walter Turncoat";
     color: aliceblue;
-    font-size: 1.8rem;
-    margin: auto;
-    position: relative;
-    top: 4rem;
-    text-align: center;
-    text-shadow: 5px 5px 10px black;
-    padding: 10px;
-    border: 2px solid aliceblue;
-    border-radius: 12px;
-    background-color: rgba(240, 248, 255, 0.1);
-    backdrop-filter: blur(3px);
-    box-shadow: 0px 0px 25px 2px black;
+    text-align: justify;
+    font-size: 1.5rem;
+    text-shadow: 4px 4px 8px black;
+    span {
+      font-style: italic;
+      color: rgb(218, 144, 32);
+    }
   }
 }

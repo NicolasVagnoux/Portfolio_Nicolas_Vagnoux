@@ -1,13 +1,46 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <ul>
-        <li>Qui suis-je ?</li>
-        <li>Compétences</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+      <ul className="navbar__list">
+        <Link
+          activeClass="active"
+          to="presentation"
+          smooth
+          duration={1000}
+          className="navbar__list__item"
+        >
+          <li>Qui suis-je ?</li>
+        </Link>
+        <Link
+          activeClass="active"
+          to="skills"
+          smooth
+          duration={1000}
+          className="navbar__list__item"
+        >
+          <li>Compétences</li>
+        </Link>
+        <Link
+          activeClass="active"
+          to="presentation"
+          smooth
+          duration={1000}
+          className="navbar__list__item"
+        >
+          <li>Portfolio</li>
+        </Link>
+        <Link
+          activeClass="active"
+          to="presentation"
+          smooth
+          duration={1000}
+          className="navbar__list__item"
+        >
+          <li>Contact</li>
+        </Link>
       </ul>
     </div>
   );

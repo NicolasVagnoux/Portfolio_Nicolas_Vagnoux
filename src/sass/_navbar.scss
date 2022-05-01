@@ -1,26 +1,28 @@
 .navbar {
   position: absolute;
   width: 100%;
-  ul {
+  &__list {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    li {
+    &__item {
+      cursor: pointer;
       list-style: none;
       text-align: center;
       color: rgb(248 250 252);
       margin-right: 3%;
       margin-top: 2rem;
       padding: 2px 10px 2px 10px;
-      font-family: "Varela Round";
+      font-family: "Walter Turncoat";
       font-size: 1.5rem;
       text-shadow: 2px 2px 4px black;
+      transition: 200ms ease-in-out;
       &:hover {
         transform: scale(1.03) rotate(-1deg);
       }
       &:last-child {
         border: 2px solid rgb(248 250 252);
-        border-radius: 3px;
+        border-radius: 5px;
         box-shadow: 1px 1px 6px black, inset 1px 1px 6px black;
         transition: 200ms ease-in-out;
         &:hover {
