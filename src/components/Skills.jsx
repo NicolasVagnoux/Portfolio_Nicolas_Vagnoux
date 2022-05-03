@@ -11,7 +11,7 @@ const Skills = () => {
             <h3>Compétences</h3>
           </div>
         </div>
-        <div className="skills__grid__softskills"></div>
+        <div className="skills__grid__softskills" />
         <div className="skills__grid__tools">
           <div className="skills__grid__tools__title">
             <img src="./assets/tools.svg" alt="tools" width="40px" />

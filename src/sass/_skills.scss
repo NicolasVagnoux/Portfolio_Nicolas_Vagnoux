@@ -16,7 +16,7 @@
     font-size: 4rem;
     font-weight: 300;
     margin-bottom: 10px;
-  };
+  }
   &__grid {
     height: 77vh;
     width: 77vw;
@@ -24,16 +24,16 @@
     grid-template-rows: repeat(5, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    font-family: 'Walter Turncoat';
+    font-family: "Walter Turncoat";
     color: aliceblue;
-    >div {
+    > div {
       border: 2px solid aliceblue;
       border-radius: 15px;
       background-color: rgba(240, 248, 255, 0.1);
       box-shadow: 0px 0px 25px 2px black;
-    };
+    }
     &__hardskills {
-      grid-area: 1 / 1 / 5 / 2 ;
+      grid-area: 1 / 1 / 5 / 2;
       &__title {
         text-align: center;
         font-size: 1.5rem;
@@ -43,13 +43,12 @@
         gap: 10px;
         margin-top: 15px;
       }
-    };
+    }
     &__softskills {
-      grid-area: 5 / 1 / 6 / 3 ;
-      
-    };
+      grid-area: 5 / 1 / 6 / 3;
+    }
     &__tools {
-      grid-area: 1 / 2 / 5 / 3 ;
+      grid-area: 1 / 2 / 5 / 3;
       &__title {
         text-align: center;
         font-size: 1.5rem;
