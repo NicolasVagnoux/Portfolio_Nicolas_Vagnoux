@@ -1,23 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
+import SkillsItem from "./SkillsItem";
 
 const Skills = () => {
+  const [openedItem, setOpenedItem] = useState("");
+
   return (
     <div className="skills" id="skills">
       <h2 className="skills__title">[Compétences, Outils]</h2>
-      <div className="skills__grid">
-        <div className="skills__grid__hardskills">
-          <div className="skills__grid__hardskills__title">
-            <img src="./assets/webdev.svg" alt="hardskills" width="40px" />
-            <h3>Compétences</h3>
-          </div>
-        </div>
-        <div className="skills__grid__softskills" />
-        <div className="skills__grid__tools">
-          <div className="skills__grid__tools__title">
-            <img src="./assets/tools.svg" alt="tools" width="40px" />
-            <h3>Outils</h3>
-          </div>
-        </div>
+      <div
+        className={`skills__grid ${
+          openedItem ? "openedGridWidth" : "closedGridWidth"
+        }`}
+      >
+        <SkillsItem
+          title="Technologies Frontend"
+          img="./assets/front.svg"
+          openedItem={openedItem}
+          setOpenedItem={setOpenedItem}
+        />
+        <SkillsItem
+          title="Technologies Backend"
+          img="./assets/back.svg"
+          openedItem={openedItem}
+          setOpenedItem={setOpenedItem}
+        />
+        <SkillsItem
+          title="Outils"
+          img="./assets/tools.svg"
+          openedItem={openedItem}
+          setOpenedItem={setOpenedItem}
+        />
+        <SkillsItem
+          title="Soft Skills"
+          img="./assets/softskills.svg"
+          openedItem={openedItem}
+          setOpenedItem={setOpenedItem}
+        />
       </div>
     </div>
   );

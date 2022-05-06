@@ -16,48 +16,21 @@
     font-size: 4rem;
     font-weight: 300;
     margin-bottom: 10px;
+    text-align: center;
   }
   &__grid {
     height: 77vh;
-    width: 77vw;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
     font-family: "Walter Turncoat";
     color: aliceblue;
-    > div {
-      border: 2px solid aliceblue;
-      border-radius: 15px;
-      background-color: rgba(240, 248, 255, 0.1);
-      box-shadow: 0px 0px 25px 2px black;
-    }
-    &__hardskills {
-      grid-area: 1 / 1 / 5 / 2;
-      &__title {
-        text-align: center;
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-      }
-    }
-    &__softskills {
-      grid-area: 5 / 1 / 6 / 3;
-    }
-    &__tools {
-      grid-area: 1 / 2 / 5 / 3;
-      &__title {
-        text-align: center;
-        font-size: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-      }
-    }
   }
+}
+
+.closedGridWidth {
+  width: calc(42vw - 116px);
+}
+
+.openedGridWidth {
+  width: calc(74vw - 116px);
 }
