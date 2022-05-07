@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SkillsItem from "./SkillsItem";
+import { front, back, tools } from "../../data/skillsData.js";
 
 const Skills = () => {
   const [openedItem, setOpenedItem] = useState("");
@@ -13,26 +14,30 @@ const Skills = () => {
         }`}
       >
         <SkillsItem
-          title="Technologies Frontend"
+          title="Technologies Front-End"
           img="./assets/front.svg"
+          data={front}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
-          title="Technologies Backend"
+          title="Technologies Back-End"
           img="./assets/back.svg"
+          data={back}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
           title="Outils"
           img="./assets/tools.svg"
+          data={tools}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
           title="Soft Skills"
           img="./assets/softskills.svg"
+          data={[]}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
