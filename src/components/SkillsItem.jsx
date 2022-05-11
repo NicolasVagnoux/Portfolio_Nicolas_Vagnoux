@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/interactive-supports-focus */
 import React from "react";
 import PropTypes from "prop-types";
+import SkillsLogo from "./SkillsLogo";
 
 const SkillsItem = ({ title, img, data, openedItem, setOpenedItem }) => {
   return (
@@ -10,10 +11,12 @@ const SkillsItem = ({ title, img, data, openedItem, setOpenedItem }) => {
       role="button"
       onClick={() => setOpenedItem(title)}
     >
+      {/* Titre qui se cache au clic */}
       <div className={`skillsItem__title ${openedItem === title && "hidden"}`}>
         <img src={img} alt={title} />
         <h3>{title}</h3>
       </div>
+      {/* Liste qui apparait au clic */}
       {openedItem === title && (
         <div className="skillsItem__list">
           <div className="skillsItem__list__header">
@@ -21,10 +24,9 @@ const SkillsItem = ({ title, img, data, openedItem, setOpenedItem }) => {
             <h3>{title}</h3>
           </div>
           <div className="skillsItem__list__core">
-            {data.map((item) => (
-              <img src={item.img} alt={item.name} />
+            {data.map((logo) => (
+              <SkillsLogo key={logo.name} {...logo} />
             ))}
-            <p>Créer un composant skillsLogo et le mapper</p>
           </div>
         </div>
       )}

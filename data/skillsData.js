@@ -1,27 +1,31 @@
 export const front = [
   {
-    name: "HTML, CSS",
-    img: "",
+    name: "HTML",
+    img: "./assets/skills_logo/html.svg",
   },
   {
-    name: "Javascript",
-    img: "",
+    name: "CSS",
+    img: "./assets/skills_logo/css.svg",
   },
   {
-    name: "Typescript",
-    img: "",
+    name: "JavaScript",
+    img: "./assets/skills_logo/js.svg",
+  },
+  {
+    name: "TypeScript",
+    img: "./assets/skills_logo/ts.svg",
   },
   {
     name: "React JS",
-    img: "",
+    img: "./assets/skills_logo/react.svg",
   },
   {
     name: "SASS",
-    img: "",
+    img: "./assets/skills_logo/sass.svg",
   },
   {
     name: "Tailwind",
-    img: "",
+    img: "./assets/skills_logo/tailwind.svg",
   },
 ];
 
@@ -47,6 +51,10 @@ export const tools = [
   },
   {
     name: "Git / GitHub",
+    img: "",
+  },
+  {
+    name: "Postman",
     img: "",
   },
   {

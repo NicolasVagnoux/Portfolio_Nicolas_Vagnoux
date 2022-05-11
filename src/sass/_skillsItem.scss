@@ -53,10 +53,13 @@
       }
     }
     &__core {
+      padding: 1.5rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
+      width: 100%;
+      height: 100%;
     }
   }
 }
