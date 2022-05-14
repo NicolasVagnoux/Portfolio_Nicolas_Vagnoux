@@ -19,7 +19,7 @@ const Home = () => {
         duration={1000}
         className="home__downButton"
       >
-        <p>﹀ VENEZ DECOUVRIR MON UNIVERS ﹀</p>
+        <p>﹀ DECOUVREZ MON UNIVERS ﹀</p>
       </Link>
     </div>
   );

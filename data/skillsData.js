@@ -32,41 +32,48 @@ export const front = [
 export const back = [
   {
     name: "Node JS",
-    img: "",
+    img: "./assets/skills_logo/nodejs.svg",
   },
   {
-    name: "MySQL",
-    img: "",
+    name: "Express JS",
+    img: "./assets/skills_logo/express.svg",
   },
   {
-    name: "Express",
-    img: "",
+    name: "SQL / MySQL",
+    img: "./assets/skills_logo/mysql.svg",
   },
 ];
 
 export const tools = [
   {
     name: "VS Code",
-    img: "",
+    img: "./assets/skills_logo/vscode.svg",
   },
   {
     name: "Git / GitHub",
-    img: "",
+    img: "./assets/skills_logo/github.svg",
   },
   {
     name: "Postman",
-    img: "",
+    img: "./assets/skills_logo/postman.svg",
   },
   {
     name: "NPM",
-    img: "",
+    img: "./assets/skills_logo/npm.svg",
   },
   {
     name: "Figma",
-    img: "",
+    img: "./assets/skills_logo/figma.svg",
   },
   {
     name: "Trello",
-    img: "",
+    img: "./assets/skills_logo/trello.svg",
   },
+];
+
+export const soft = [
+  "Rigueur, Organisation",
+  "Adaptabilité",
+  "Esprit d'équipe",
+  "Force de proposition",
 ];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SkillsItem from "./SkillsItem";
-import { front, back, tools } from "../../data/skillsData.js";
+import { front, back, tools, soft } from "../../data/skillsData.js";
 
 const Skills = () => {
   const [openedItem, setOpenedItem] = useState("");
@@ -37,7 +37,7 @@ const Skills = () => {
         <SkillsItem
           title="Soft Skills"
           img="./assets/softskills.svg"
-          data={[]}
+          list={soft}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
