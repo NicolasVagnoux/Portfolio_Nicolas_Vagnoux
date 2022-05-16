@@ -72,8 +72,8 @@ export const tools = [
 ];
 
 export const soft = [
-  "Rigueur, Organisation",
-  "Adaptabilité",
-  "Esprit d'équipe",
-  "Force de proposition",
+  "📐 Rigueur, Organisation",
+  "🤝 Esprit d'équipe",
+  "👨‍💻 Adaptabilité",
+  "💡 Force de proposition",
 ];

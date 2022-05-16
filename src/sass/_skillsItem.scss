@@ -28,6 +28,7 @@
       font-weight: 100;
     }
   }
+  // Liste des logos
   &__list {
     writing-mode: horizontal-tb;
     width: 40vw;
@@ -62,6 +63,7 @@
       height: 100%;
     }
   }
+  // Liste des softskills
   &__softList {
     writing-mode: horizontal-tb;
     width: 40vw;
@@ -100,6 +102,7 @@
       height: 100%;
     }
     li {
+      transition: 200ms ease-in-out;
       &:hover {
         transform: scale(1.05);
       }

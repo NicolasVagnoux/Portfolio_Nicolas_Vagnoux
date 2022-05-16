@@ -16,28 +16,28 @@ const Skills = () => {
         <SkillsItem
           title="Technologies Front-End"
           img="./assets/front.svg"
-          data={front}
+          logoList={front}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
           title="Technologies Back-End"
           img="./assets/back.svg"
-          data={back}
+          logoList={back}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
           title="Outils"
           img="./assets/tools.svg"
-          data={tools}
+          logoList={tools}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
         <SkillsItem
           title="Soft Skills"
           img="./assets/softskills.svg"
-          list={soft}
+          softList={soft}
           openedItem={openedItem}
           setOpenedItem={setOpenedItem}
         />
