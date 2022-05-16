@@ -31,12 +31,24 @@ const Leftbar = () => {
       >
         <img src="./assets/skills.png" alt="skills" />
       </Link>
-      <div className="leftbar__logo">
+      <Link
+        activeClass="active"
+        to="projects"
+        smooth
+        duration={1000}
+        className="leftbar__logo"
+      >
         <img src="./assets/projects.png" alt="projects" />
-      </div>
-      <div className="leftbar__logo">
+      </Link>
+      <Link
+        activeClass="active"
+        to="projects"
+        smooth
+        duration={1000}
+        className="leftbar__logo"
+      >
         <img src="./assets/contact.png" alt="contact" />
-      </div>
+      </Link>
     </div>
   );
 };
