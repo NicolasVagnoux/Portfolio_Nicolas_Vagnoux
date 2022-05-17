@@ -27,10 +27,12 @@ const ProjectsDetails = () => {
         </div>
         <div className="projectsDetails__container__technologies">
           <p>Technologies utilisées :</p>
-          {selectedProject &&
-            selectedProject.technologies.map((techno) => (
-              <SkillsLogo {...techno} />
-            ))}
+          <div className="projectsDetails__container__technologies__list">
+            {selectedProject &&
+              selectedProject.technologies.map((techno) => (
+                <SkillsLogo {...techno} />
+              ))}
+          </div>
         </div>
         <div className="projectsDetails__container__link">
           <a href={selectedProject.url} target="_blank" rel="noreferrer">
