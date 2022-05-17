@@ -1,22 +1,15 @@
 import "./App.scss";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Presentation from "./components/Presentation";
-import Leftbar from "./components/Leftbar";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import { Routes, Route } from "react-router-dom";
+import OnePage from "./components/OnePage";
+import ProjectsDetails from "./components/ProjectsDetails";
 
 function App() {
   return (
     <div className="app">
-      <Leftbar />
-      <div className="main">
-        <Navbar />
-        <Home />
-        <Presentation />
-        <Skills />
-        <Projects />
-      </div>
+      <Routes>
+        <Route path="/" element={<OnePage />} />
+        <Route path="/projects/:id" element={<ProjectsDetails />} />
+      </Routes>
     </div>
   );
 }

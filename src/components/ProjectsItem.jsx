@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-const ProjectsItem = ({ name, logo, img, shortDesc }) => {
+const ProjectsItem = ({ id, name, logo, img, shortDesc }) => {
   return (
     <div className="projectsItem">
       <div className="projectsItem__content">
@@ -14,17 +15,23 @@ const ProjectsItem = ({ name, logo, img, shortDesc }) => {
       </div>
       <div className="projectsItem__hoverContent">
         <p>{shortDesc}</p>
-        <div className="projectsItem__hoverContent__button">En savoir plus</div>
+        <Link
+          to={`/projects/${id}`}
+          className="projectsItem__hoverContent__button"
+        >
+          <div>En savoir plus</div>
+        </Link>
       </div>
     </div>
   );
 };
 
 ProjectsItem.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   logo: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  shortDesc: PropTypes.func.isRequired,
+  shortDesc: PropTypes.string.isRequired,
 };
 
 export default ProjectsItem;
