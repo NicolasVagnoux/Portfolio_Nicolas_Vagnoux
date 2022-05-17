@@ -22,6 +22,7 @@ const projects = [
         img: "/assets/skills_logo/tailwind.svg",
       },
     ],
+    url: "https://star-tour-agency.vercel.app",
   },
   {
     id: "green-my-mind",
@@ -46,6 +47,7 @@ const projects = [
         img: "/assets/skills_logo/sass.svg",
       },
     ],
+    url: "https://green-my-mind.vercel.app",
   },
 ];
 

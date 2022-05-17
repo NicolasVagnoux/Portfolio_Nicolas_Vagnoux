@@ -32,6 +32,11 @@ const ProjectsDetails = () => {
               <SkillsLogo {...techno} />
             ))}
         </div>
+        <div className="projectsDetails__container__link">
+          <a href={selectedProject.url} target="_blank" rel="noreferrer">
+            Découvrir le site
+          </a>
+        </div>
       </div>
     </div>
   );
