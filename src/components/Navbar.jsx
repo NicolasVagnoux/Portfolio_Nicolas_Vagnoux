@@ -25,12 +25,12 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="presentation"
+          to="projects"
           smooth
           duration={1000}
           className="navbar__list__item"
         >
-          <li>Portfolio</li>
+          <li>Projets</li>
         </Link>
         <Link
           activeClass="active"

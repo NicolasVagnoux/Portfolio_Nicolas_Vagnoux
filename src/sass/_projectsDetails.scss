@@ -1,0 +1,76 @@
+.projectsDetails {
+  min-height: 100vh;
+  background-image: url("../assets/4-treesky.jpg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 2px black;
+    background-color: rgba(240, 248, 255, 0.15);
+    backdrop-filter: blur(2px);
+    font-family: "Walter Turncoat";
+    color: aliceblue;
+    text-shadow: 3px 3px 6px black, -3px -3px 6px black;
+    overflow: hidden;
+    &__header {
+      height: 35vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      &__logo {
+        position: absolute;
+        width: 30rem;
+        filter: drop-shadow(0px 0px 15px black);
+      }
+    }
+    &__description {
+      align-self: flex-start;
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+    }
+    &__technologies {
+      align-self: flex-start;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 2rem;
+    }
+    &__link {
+      margin: 1rem;
+      padding: 2px 20px;
+      border: 2px solid aliceblue;
+      border-radius: 10px;
+      background-color: rgba(5, 40, 90, 0.3);
+      box-shadow: 0px 0px 25px 2px black;
+      transition: 200ms ease-in-out;
+      a {
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

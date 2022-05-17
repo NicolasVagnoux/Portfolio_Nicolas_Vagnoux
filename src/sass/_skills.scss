@@ -7,12 +7,30 @@
   border-top: 3px solid aliceblue;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   &__title {
     font-family: "Walter Turncoat";
     color: aliceblue;
     font-size: 4rem;
     font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
   }
+  &__grid {
+    height: 77vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Walter Turncoat";
+    color: aliceblue;
+  }
+}
+
+.closedGridWidth {
+  width: calc(42vw - 116px);
+}
+
+.openedGridWidth {
+  width: calc(74vw - 116px);
 }
