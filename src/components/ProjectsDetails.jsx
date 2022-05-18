@@ -16,6 +16,15 @@ const ProjectsDetails = () => {
             src={selectedProject.img}
             alt={selectedProject.name}
           />
+          <button
+            type="button"
+            className="projectsDetails__container__header__return"
+            onClick={() => {
+              window.history.back();
+            }}
+          >
+            {"< Revenir aux projets"}
+          </button>
           <img
             className="projectsDetails__container__header__logo"
             src={selectedProject.logo}
