@@ -96,7 +96,7 @@
     }
     input:last-child {
       align-self: flex-end;
-      margin-top: 1rem;
+      margin-top: 2rem;
       padding: 0;
       width: 40%;
       &:hover {
@@ -104,4 +104,59 @@
       }
     }
   }
+  &__footer {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 25vh;
+    background-color: rgba(5, 40, 90, 0.5);
+    border: 2px solid aliceblue;
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    > div {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+    p {
+      font-family: "Walter Turncoat";
+      color: aliceblue;
+      font-size: 2rem;
+    }
+    &__logos {
+      &__list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+      }
+    }
+    &__cv {
+      img {
+        transition: 200ms ease-in-out;
+        &:hover {
+          transform: scale(1.05) rotate(-2deg);
+        }
+      }
+    }
+  }
+}
+
+// Classes qui forcent les labels à rester en haut de l'input si les champs sont remplis
+
+.inputHasValue {
+  transform: translate(10px, -62px) !important;
+  font-size: 1rem !important;
+  text-shadow: 2px 2px 4px black;
+}
+
+.textareaHasValue {
+  transform: translate(10px, -17px) !important;
+  font-size: 1rem !important;
+  text-shadow: 2px 2px 4px black;
 }

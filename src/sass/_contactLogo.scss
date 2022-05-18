@@ -1,0 +1,7 @@
+.contactLogo {
+  width: 75px;
+  transition: 200ms ease-in-out;
+  &:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+}
