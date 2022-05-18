@@ -34,7 +34,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="presentation"
+          to="contact"
           smooth
           duration={1000}
           className="navbar__list__item"

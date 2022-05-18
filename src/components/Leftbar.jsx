@@ -42,7 +42,7 @@ const Leftbar = () => {
       </Link>
       <Link
         activeClass="active"
-        to="projects"
+        to="contact"
         smooth
         duration={1000}
         className="leftbar__logo"
