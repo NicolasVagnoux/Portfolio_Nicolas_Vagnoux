@@ -16,6 +16,15 @@ const ProjectsDetails = () => {
             src={selectedProject.img}
             alt={selectedProject.name}
           />
+          <button
+            type="button"
+            className="projectsDetails__container__header__return"
+            onClick={() => {
+              window.history.back();
+            }}
+          >
+            {"< Revenir aux projets"}
+          </button>
           <img
             className="projectsDetails__container__header__logo"
             src={selectedProject.logo}
@@ -27,10 +36,12 @@ const ProjectsDetails = () => {
         </div>
         <div className="projectsDetails__container__technologies">
           <p>Technologies utilisées :</p>
-          {selectedProject &&
-            selectedProject.technologies.map((techno) => (
-              <SkillsLogo {...techno} />
-            ))}
+          <div className="projectsDetails__container__technologies__list">
+            {selectedProject &&
+              selectedProject.technologies.map((techno) => (
+                <SkillsLogo {...techno} />
+              ))}
+          </div>
         </div>
         <div className="projectsDetails__container__link">
           <a href={selectedProject.url} target="_blank" rel="noreferrer">

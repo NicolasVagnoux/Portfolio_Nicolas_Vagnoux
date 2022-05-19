@@ -5,6 +5,7 @@ import Home from "./Home";
 import Presentation from "./Presentation";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 const OnePage = () => {
   return (
@@ -16,6 +17,7 @@ const OnePage = () => {
         <Presentation />
         <Skills />
         <Projects />
+        <Contact />
       </div>
     </div>
   );

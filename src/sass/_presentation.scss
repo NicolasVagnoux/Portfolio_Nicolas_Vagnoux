@@ -10,24 +10,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Walter Turncoat";
+  @media screen and (max-width: 800px) {
+    padding-left: 0;
+    padding-top: 85px;
+  }
   &__intro {
     width: 85%;
     display: flex;
     justify-content: space-between;
     p {
       font-size: 3rem;
-      font-family: "Walter Turncoat";
       color: aliceblue;
       text-shadow: 5px 5px 10px black;
     }
     img {
       height: 12rem;
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
     }
   }
   &__core {
     margin-top: -2rem;
     width: 85%;
-    font-family: "Walter Turncoat";
     color: aliceblue;
     text-align: justify;
     font-size: 1.5rem;
@@ -35,6 +41,9 @@
     span {
       font-style: italic;
       color: rgb(218, 144, 32);
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: 2rem;
     }
   }
 }
