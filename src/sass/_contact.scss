@@ -94,11 +94,20 @@
         text-shadow: 2px 2px 4px black;
       }
     }
-    input:last-child {
+    &__submit {
       align-self: flex-end;
       margin-top: 2rem;
       padding: 0;
       width: 40%;
+      font-family: "Walter Turncoat";
+      color: aliceblue;
+      font-size: 1.5rem;
+      border: 2px solid aliceblue;
+      border-radius: 10px;
+      background-color: rgba(5, 40, 90, 0.5);
+      backdrop-filter: blur(2px);
+      box-shadow: 0px 0px 20px 2px black;
+      cursor: pointer;
       &:hover {
         transform: scale(1.05);
       }

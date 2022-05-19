@@ -3,10 +3,9 @@ import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [mail, setMail] = useState("");
-  const [message, setMessage] = useState("");
-  console.log(name, mail, message);
+  const [userName, setUserName] = useState("");
+  const [userMail, setUserMail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
 
   return (
     <div className="contact" id="contact">
@@ -23,12 +22,12 @@ const Contact = () => {
             type="text"
             required
             autoComplete="false"
-            value={name}
+            value={userName}
             onChange={(e) => {
-              setName(e.target.value);
+              setUserName(e.target.value);
             }}
           />
-          <label htmlFor="name" className={name ? "inputHasValue" : ""}>
+          <label htmlFor="name" className={userName ? "inputHasValue" : ""}>
             Quel est votre nom ?
           </label>
         </div>
@@ -39,12 +38,12 @@ const Contact = () => {
             type="email"
             required
             autoComplete="false"
-            value={mail}
+            value={userMail}
             onChange={(e) => {
-              setMail(e.target.value);
+              setUserMail(e.target.value);
             }}
           />
-          <label htmlFor="mail" className={mail ? "inputHasValue" : ""}>
+          <label htmlFor="mail" className={userMail ? "inputHasValue" : ""}>
             Quelle est votre adresse email ?
           </label>
         </div>
@@ -54,19 +53,21 @@ const Contact = () => {
             id="message"
             rows="5"
             required
-            value={message}
+            value={userMessage}
             onChange={(e) => {
-              setMessage(e.target.value);
+              setUserMessage(e.target.value);
             }}
           />
           <label
             htmlFor="message"
-            className={message ? "textareaHasValue" : ""}
+            className={userMessage ? "textareaHasValue" : ""}
           >
             Quel est votre message ?
           </label>
         </div>
-        <input className="contact__form__submit" type="submit" />
+        <button className="contact__form__submit" type="submit">
+          Envoyer
+        </button>
       </form>
       <p className="contact__prefooter">
         ﹀ Ou si vous préférez me contacter autrement ﹀
