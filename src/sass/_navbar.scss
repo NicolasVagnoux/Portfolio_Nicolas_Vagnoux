@@ -1,6 +1,9 @@
 .navbar {
   position: absolute;
   width: 100%;
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
   &__list {
     display: flex;
     justify-content: flex-end;

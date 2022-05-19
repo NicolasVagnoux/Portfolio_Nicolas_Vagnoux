@@ -9,6 +9,10 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 0px 25px 2px black;
+  font-family: "Walter Turncoat";
+  @media screen and (max-width: 1100px) {
+    width: 22rem;
+  }
   &:hover > .projectsItem__content {
     transform: scale(1.05);
   }
@@ -31,10 +35,17 @@
     &__background {
       width: 100%;
       object-fit: cover;
+      @media screen and (max-width: 1100px) {
+        height: 12rem;
+        width: 22rem;
+      }
     }
     &__logo {
       position: absolute;
       filter: drop-shadow(0px 0px 8px black);
+      @media screen and (max-width: 1100px) {
+        width: 15rem;
+      }
     }
   }
   &__hoverContent {
@@ -49,9 +60,11 @@
     background-color: rgb(0, 0, 0, 0);
     color: rgb(250, 250, 250, 0);
     font-size: 1.4rem;
-    font-family: "Walter Turncoat";
     text-align: center;
     transition: 700ms;
+    @media screen and (max-width: 1100px) {
+      width: 21.8rem;
+    }
     &__button {
       font-size: 1.6rem;
       border-radius: 8px;
