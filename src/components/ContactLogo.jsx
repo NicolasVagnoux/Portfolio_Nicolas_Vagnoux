@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const ContactLogo = ({ id, img, url }) => {
   return (
     <div className="contactLogo">
-      <a href={url}>
+      <a href={url} target="blank">
         <img src={img} alt={id} />
       </a>
     </div>

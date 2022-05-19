@@ -68,6 +68,9 @@ const Contact = () => {
         </div>
         <input className="contact__form__submit" type="submit" />
       </form>
+      <p className="contact__prefooter">
+        ﹀ Ou si vous préférez me contacter autrement ﹀
+      </p>
       <div className="contact__footer">
         <div className="contact__footer__logos">
           <p>Où me retrouver :</p>
@@ -79,8 +82,8 @@ const Contact = () => {
         </div>
         <div className="contact__footer__cv">
           <p>Télécharger mon CV :</p>
-          <a href="https://www.linkedin.com/in/nicolas-vagnoux/">
-            <img src="./assets/cv.png" alt="cv" width="90px" />
+          <a href="https://www.linkedin.com/in/nicolas-vagnoux/" target="blank">
+            <img src="./assets/cv.png" alt="cv" width="75px" />
           </a>
         </div>
       </div>

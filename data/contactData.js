@@ -1,12 +1,12 @@
 const contactLogo = [
   {
     id: "linkedin",
-    img: "./assets/linkedin.svg",
+    img: "./assets/linkedin3.svg",
     url: "https://www.linkedin.com/in/nicolas-vagnoux/",
   },
   {
     id: "github",
-    img: "./assets/github2.svg",
+    img: "./assets/skills_logo/github.svg",
     url: "https://github.com/NicolasVagnoux",
   },
   {
