@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
 
@@ -6,11 +7,29 @@ const Contact = () => {
   const [userName, setUserName] = useState("");
   const [userMail, setUserMail] = useState("");
   const [userMessage, setUserMessage] = useState("");
+  const [status, setStatus] = useState("Envoyer");
+
+  const handleSubmitMail = (e) => {
+    e.preventDefault();
+    axios.post("http://localhost:8000/", {
+      name: userName,
+      email: userMail,
+      message: userMessage,
+    });
+    setUserName("");
+    setUserMail("");
+    setUserMessage("");
+    setStatus("Message Envoyé !");
+  };
 
   return (
     <div className="contact" id="contact">
       <h1 className="contact__title">{"< Contact />"}</h1>
-      <form className="contact__form" autoComplete="off">
+      <form
+        className="contact__form"
+        autoComplete="off"
+        onSubmit={(e) => handleSubmitMail(e)}
+      >
         <p>
           Vous souhaitez me contacter ? Vous pouvez remplir le formulaire
           suivant :
@@ -66,7 +85,7 @@ const Contact = () => {
           </label>
         </div>
         <button className="contact__form__submit" type="submit">
-          Envoyer
+          {status}
         </button>
       </form>
       <p className="contact__prefooter">
