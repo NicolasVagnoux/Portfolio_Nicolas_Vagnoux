@@ -11,7 +11,7 @@ const Navbar = () => {
             activeClass="active"
             to={navItem.link}
             smooth
-            duration={1000}
+            duration={600}
             className="navbar__list__item"
           >
             <li>{navItem.name}</li>

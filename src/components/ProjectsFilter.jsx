@@ -10,7 +10,7 @@ const ProjectsFilter = ({ filter, setFilter }) => {
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       >
-        <option value="">-- Filtrer par technologie --</option>
+        <option value="">- Filtrer par technologie -</option>
         {technologies &&
           technologies.map((techno) => (
             <option key={techno} value={techno}>

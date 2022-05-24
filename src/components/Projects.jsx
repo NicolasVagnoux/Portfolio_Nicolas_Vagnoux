@@ -20,6 +20,14 @@ const Projects = () => {
                   .includes(filter) || !filter
             )
             .map((project) => <ProjectsItem {...project} />)}
+        {!projects.filter((project) =>
+          project.technologies.map((techno) => techno.name).includes(filter)
+        ).length &&
+          filter && (
+            <p className="projects__list__empty">
+              Pas (encore) de projet correspondant 🚀
+            </p>
+          )}
       </div>
     </div>
   );
