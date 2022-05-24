@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     id: "star-tour",
     name: "Star Tour",
@@ -51,4 +51,13 @@ const projects = [
   },
 ];
 
-export default projects;
+export const technologies = [
+  "Html/Css/Js",
+  "React JS",
+  "TypeScript",
+  "SASS",
+  "Tailwind",
+  "Node JS",
+  "Express JS",
+  "SQL / MySQL",
+];
