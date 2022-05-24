@@ -1,6 +1,7 @@
 .projectsDetails {
   min-height: 100vh;
-  background-image: url("../assets/4-treesky.jpg");
+  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+    url("../assets/4-treesky.jpg");
   background-size: cover;
   background-position: top;
   display: flex;

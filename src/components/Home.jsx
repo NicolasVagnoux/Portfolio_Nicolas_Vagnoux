@@ -19,7 +19,7 @@ const Home = () => {
         activeClass="active"
         to="presentation"
         smooth
-        duration={1000}
+        duration={600}
         className="home__downButton"
       >
         <p>﹀ DECOUVREZ MON UNIVERS ﹀</p>

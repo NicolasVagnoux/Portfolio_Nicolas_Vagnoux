@@ -100,6 +100,7 @@ const Contact = () => {
             ))}
           </ul>
         </div>
+        <div className="contact__footer__inter" />
         <div className="contact__footer__cv">
           <p>Télécharger mon CV :</p>
           <a href="https://www.linkedin.com/in/nicolas-vagnoux/" target="blank">
