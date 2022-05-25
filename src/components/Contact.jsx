@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
+import cv from "../../public/assets/files/NicolasVagnouxCV_WebDev.pdf";
 
 const Contact = () => {
   const [userName, setUserName] = useState("");
@@ -103,7 +104,7 @@ const Contact = () => {
         <div className="contact__footer__inter" />
         <div className="contact__footer__cv">
           <p>Télécharger mon CV :</p>
-          <a href="https://www.linkedin.com/in/nicolas-vagnoux/" target="blank">
+          <a href={cv} target="blank">
             <img src="./assets/cv.png" alt="cv" width="75px" />
           </a>
         </div>
