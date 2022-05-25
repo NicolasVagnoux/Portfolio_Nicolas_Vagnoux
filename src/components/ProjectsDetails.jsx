@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import projects from "../../data/projectsData";
+import { projects } from "../../data/projectsData";
 import SkillsLogo from "./SkillsLogo";
 
 const ProjectsDetails = () => {

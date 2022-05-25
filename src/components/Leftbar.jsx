@@ -10,7 +10,7 @@ const Leftbar = () => {
           activeClass="active"
           to={navItem.link}
           smooth
-          duration={1000}
+          duration={600}
           className="leftbar__logo"
         >
           <img src={navItem.img} alt={navItem.link} />

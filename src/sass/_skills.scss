@@ -1,7 +1,8 @@
 .skills {
   padding-left: 116px;
   min-height: 100vh;
-  background-image: url("../assets/3-spacesky.jpg");
+  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+    url("../assets/3-spacesky.jpg");
   background-size: cover;
   background-position: center;
   border-top: 3px solid aliceblue;

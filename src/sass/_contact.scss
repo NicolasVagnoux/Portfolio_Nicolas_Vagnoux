@@ -1,7 +1,8 @@
 .contact {
   padding-left: 116px;
   min-height: 100vh;
-  background-image: url("../assets/5-lakesky.jpg");
+  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+    url("../assets/5-lakesky.jpg");
   background-size: cover;
   background-position: center;
   border-top: 3px solid aliceblue;
@@ -136,7 +137,7 @@
   &__footer {
     margin-bottom: 3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 90%;
     height: 25vh;
@@ -152,13 +153,6 @@
       padding-bottom: 1rem;
       gap: 2rem;
     }
-    > div {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
     p {
       color: aliceblue;
       font-size: 2rem;
@@ -166,12 +160,28 @@
         font-size: 1.6rem;
       }
     }
+    &__logos,
+    &__cv {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
     &__logos {
       &__list {
         display: flex;
         justify-content: space-around;
         align-items: center;
         gap: 2rem;
+      }
+    }
+    &__inter {
+      width: 2px;
+      height: 75%;
+      border-right: 2px solid aliceblue;
+      @media screen and (max-width: 800px) {
+        display: none;
       }
     }
     &__cv {

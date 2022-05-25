@@ -2,7 +2,8 @@
   padding-left: 116px;
   padding-bottom: 3.4rem;
   min-height: 100vh;
-  background-image: url("../assets/2-spinsky.jpg");
+  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+    url("../assets/2-spinsky.jpg");
   background-size: cover;
   background-position: bottom;
   border-top: 3px solid aliceblue;
