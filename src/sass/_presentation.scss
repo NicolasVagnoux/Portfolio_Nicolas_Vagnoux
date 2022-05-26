@@ -27,6 +27,7 @@
     }
     img {
       height: 12rem;
+      animation: jump 2s ease-in-out infinite;
       @media screen and (max-width: 1200px) {
         display: none;
       }
@@ -46,5 +47,17 @@
     @media screen and (max-width: 1200px) {
       margin-top: 2rem;
     }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
   }
 }
