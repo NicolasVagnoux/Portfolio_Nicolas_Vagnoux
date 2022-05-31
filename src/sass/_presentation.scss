@@ -2,62 +2,81 @@
   padding-left: 116px;
   padding-bottom: 3.4rem;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 15, 40, 1) 0%,
+      rgba(0, 15, 40, 0.7) 15%,
+      rgba(0, 15, 40, 0.7) 90%,
+      rgba(0, 15, 40, 1) 100%
+    ),
     url("../assets/2-spinsky.jpg");
   background-size: cover;
   background-position: bottom;
-  border-top: 3px solid aliceblue;
+  // border-top: 3px solid aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Walter Turncoat";
   @media screen and (max-width: 800px) {
     padding-left: 0;
     padding-top: 85px;
   }
-  &__intro {
-    width: 85%;
-    display: flex;
-    justify-content: space-between;
-    p {
-      font-size: 3rem;
-      color: aliceblue;
-      text-shadow: 5px 5px 10px black;
-    }
-    img {
-      height: 12rem;
-      animation: jump 2s ease-in-out infinite;
-      @media screen and (max-width: 1200px) {
-        display: none;
-      }
-    }
-  }
   &__core {
-    margin-top: -2rem;
-    width: 85%;
+    width: 80%;
     color: aliceblue;
     text-align: justify;
     font-size: 1.5rem;
     text-shadow: 4px 4px 8px black;
-    span {
-      font-style: italic;
-      color: rgb(218, 144, 32);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8rem;
+    &__picture {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 2.8rem;
+        text-align: center;
+        margin-bottom: 4rem;
+        font-family: "Walter Turncoat";
+      }
+      img {
+        width: 300px;
+        border-radius: 150px;
+        filter: drop-shadow(0px 0px 15px black);
+      }
     }
-    @media screen and (max-width: 1200px) {
-      margin-top: 2rem;
+    &__text {
+      font-family: "Exo 2";
+      font-size: 1.6rem;
+      font-weight: 200;
+      span {
+        font-style: italic;
+        color: rgb(218, 144, 32);
+      }
+      &__rocket {
+        width: 140px;
+        position: absolute;
+        align-self: flex-end;
+        transform: translate(450px, 140px) rotate(5deg);
+        @media screen and (max-width: 1200px) {
+          display: none;
+        }
+      }
     }
   }
 }
 
 @keyframes jump {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) rotate(0deg);
   }
   50% {
-    transform: translate(0px, -15px);
+    transform: translate(0px, -15px) rotate(180deg);
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 0px) rotate(360deg);
   }
 }

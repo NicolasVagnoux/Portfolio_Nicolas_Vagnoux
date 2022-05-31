@@ -1,11 +1,16 @@
 .contact {
   padding-left: 116px;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 15, 40, 0.7), rgba(0, 15, 40, 0.7)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 15, 40, 1) 0%,
+      rgba(0, 15, 40, 0.7) 10%,
+      rgba(0, 15, 40, 0.7) 100%
+    ),
     url("../assets/5-lakesky.jpg");
   background-size: cover;
   background-position: center;
-  border-top: 3px solid aliceblue;
+  // border-top: 3px solid aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -17,7 +22,7 @@
   }
   &__title {
     color: aliceblue;
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 300;
     text-shadow: 5px 5px 10px black;
     margin-top: 3vh;

@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <h1 className="contact__title">{"< Contact />"}</h1>
+      <h1 className="contact__title">Contact</h1>
       <form
         className="contact__form"
         autoComplete="off"

@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects">
-      <h2 className="projects__title">{"{ ...Projets }"}</h2>
+      <h2 className="projects__title">Projets</h2>
       <ProjectsFilter filter={filter} setFilter={setFilter} />
       <div className="projects__list">
         {projects &&
