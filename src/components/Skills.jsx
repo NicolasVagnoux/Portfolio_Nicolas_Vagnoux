@@ -3,11 +3,11 @@ import SkillsItem from "./SkillsItem";
 import { front, back, tools, soft } from "../../data/skillsData.js";
 
 const Skills = () => {
-  const [openedItem, setOpenedItem] = useState("");
+  const [openedItem, setOpenedItem] = useState("Technologies Front-End");
 
   return (
     <div className="skills" id="skills">
-      <h2 className="skills__title">[Compétences, Outils]</h2>
+      <h2 className="skills__title">Compétences, Outils</h2>
       <div
         className={`skills__grid ${
           openedItem ? "openedGridWidth" : "closedGridWidth"
