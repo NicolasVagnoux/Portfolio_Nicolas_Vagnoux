@@ -11,7 +11,6 @@
     url("../assets/3-spacesky.jpg");
   background-size: cover;
   background-position: center;
-  // border-top: 3px solid aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +28,15 @@
     text-shadow: 5px 5px 10px black;
     margin-bottom: 1.5vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+    div {
+      border-bottom: 2px solid aliceblue;
+      height: 2px;
+      width: 4rem;
+      margin: 2rem;
+      box-shadow: 5px 5px 10px black;
+    }
   }
   &__grid {
     height: 77vh;
