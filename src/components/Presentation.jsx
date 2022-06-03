@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 const Presentation = () => {
   return (
     <div className="presentation" id="presentation">
-      <Fade bottom>
+      <Fade bottom distance="100px">
         <div className="presentation__core">
           <div className="presentation__core__picture">
             <p>Hello there !</p>

@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <div className="skills" id="skills">
-      <Fade bottom>
+      <Fade bottom distance="100px">
         <h2 className="skills__title">
           <div />
           Compétences, Outils

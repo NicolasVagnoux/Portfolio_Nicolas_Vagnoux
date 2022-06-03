@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <Fade bottom>
+      <Fade bottom distance="100px">
         <h1 className="contact__title">
           <div />
           Contact

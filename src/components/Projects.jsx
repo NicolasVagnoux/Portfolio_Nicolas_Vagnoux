@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects">
-      <Fade bottom>
+      <Fade bottom distance="100px">
         <h2 className="projects__title">
           <div />
           Projets
@@ -17,7 +17,7 @@ const Projects = () => {
         </h2>
       </Fade>
       <ProjectsFilter filter={filter} setFilter={setFilter} />
-      <Fade bottom>
+      <Fade bottom distance="100px">
         <div className="projects__list">
           {projects &&
             projects
