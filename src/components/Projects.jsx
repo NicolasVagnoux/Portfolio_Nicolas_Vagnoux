@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 import ProjectsItem from "./ProjectsItem";
 import { projects } from "../../data/projectsData";
 import ProjectsFilter from "./ProjectsFilter";
@@ -8,27 +9,35 @@ const Projects = () => {
 
   return (
     <div className="projects" id="projects">
-      <h2 className="projects__title">Projets</h2>
+      <Fade bottom distance="100px">
+        <h2 className="projects__title">
+          <div />
+          Projets
+          <div />
+        </h2>
+      </Fade>
       <ProjectsFilter filter={filter} setFilter={setFilter} />
-      <div className="projects__list">
-        {projects &&
-          projects
-            .filter(
-              (project) =>
-                project.technologies
-                  .map((techno) => techno.name)
-                  .includes(filter) || !filter
-            )
-            .map((project) => <ProjectsItem {...project} />)}
-        {!projects.filter((project) =>
-          project.technologies.map((techno) => techno.name).includes(filter)
-        ).length &&
-          filter && (
-            <p className="projects__list__empty">
-              Pas (encore) de projet correspondant 🚀
-            </p>
-          )}
-      </div>
+      <Fade bottom distance="100px">
+        <div className="projects__list">
+          {projects &&
+            projects
+              .filter(
+                (project) =>
+                  project.technologies
+                    .map((techno) => techno.name)
+                    .includes(filter) || !filter
+              )
+              .map((project) => <ProjectsItem {...project} />)}
+          {!projects.filter((project) =>
+            project.technologies.map((techno) => techno.name).includes(filter)
+          ).length &&
+            filter && (
+              <p className="projects__list__empty">
+                Pas (encore) de projet correspondant 🚀
+              </p>
+            )}
+        </div>
+      </Fade>
     </div>
   );
 };

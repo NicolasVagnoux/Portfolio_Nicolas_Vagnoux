@@ -1,6 +1,7 @@
 .projects {
   padding-left: 116px;
-  min-height: 100vh;
+  padding-top: 60px;
+  min-height: 90vh;
   background-image: linear-gradient(
       to bottom,
       rgba(0, 15, 40, 1) 0%,
@@ -11,7 +12,6 @@
     url("../assets/4-treesky.jpg");
   background-size: cover;
   background-position: top;
-  // border-top: 3px solid aliceblue;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -29,10 +29,19 @@
     margin-top: 3vh;
     margin-bottom: 1.5vh;
     text-align: center;
+    display: flex;
+    align-items: center;
+    div {
+      border-bottom: 2px solid aliceblue;
+      height: 2px;
+      width: 4rem;
+      margin: 2rem;
+      box-shadow: 5px 5px 10px black;
+    }
   }
   &__list {
     width: 80%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -46,7 +55,8 @@
     &__empty {
       color: aliceblue;
       text-align: center;
-      font-size: 3rem;
+      font-size: 2.5rem;
+      font-family: "Exo 2";
       text-shadow: 3px 3px 6px black;
     }
   }
