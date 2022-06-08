@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import SkillsItem from "./SkillsItem";
 import { front, back, tools, soft } from "../../data/skillsData.js";
+import SkillsMobile from "./SkillsMobile";
 
 const Skills = () => {
   const [openedItem, setOpenedItem] = useState("Technologies Front-End");
@@ -46,6 +47,28 @@ const Skills = () => {
             softList={soft}
             openedItem={openedItem}
             setOpenedItem={setOpenedItem}
+          />
+        </div>
+        <div className="skills__mobile">
+          <SkillsMobile
+            title="Technologies Front-End"
+            img="./assets/front.svg"
+            logoList={front}
+          />
+          <SkillsMobile
+            title="Technologies Back-End"
+            img="./assets/back.svg"
+            logoList={back}
+          />
+          <SkillsMobile
+            title="Outils"
+            img="./assets/tools.svg"
+            logoList={tools}
+          />
+          <SkillsMobile
+            title="Soft Skills"
+            img="./assets/softskills.svg"
+            softList={soft}
           />
         </div>
       </Fade>
