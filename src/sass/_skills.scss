@@ -26,7 +26,7 @@
     font-size: 3.4rem;
     font-weight: 300;
     text-shadow: 5px 5px 10px black;
-    margin-bottom: 1.5vh;
+    margin-bottom: 2.5vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -39,10 +39,28 @@
     }
   }
   &__grid {
-    height: 77vh;
+    height: 74vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: aliceblue;
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  &__mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+    @media screen and (max-width: 950px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }
 
