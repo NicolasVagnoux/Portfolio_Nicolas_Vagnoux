@@ -1,6 +1,6 @@
 .projects {
   padding-left: 116px;
-  padding-top: 60px;
+  padding-top: 40px;
   min-height: 90vh;
   background-image: linear-gradient(
       to bottom,
@@ -40,17 +40,19 @@
     }
   }
   &__list {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     @media screen and (max-width: 600px) {
+      display: flex;
       flex-direction: column;
       justify-content: flex-start;
       margin-top: 1rem;
-      gap: 2rem;
+      gap: 1rem;
     }
     &__empty {
       color: aliceblue;
