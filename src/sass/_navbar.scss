@@ -36,3 +36,54 @@
     }
   }
 }
+
+.navbarMobile {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  transform: translate(300px);
+  transition: 300ms ease-in-out;
+  &--opened {
+    transform: translate(0px);
+  }
+  button {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    border: none;
+    background-color: rgb(5, 40, 90, 0);
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px black);
+  }
+  &__list {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    height: 200vh;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: aliceblue;
+    font-family: "Walter Turncoat";
+    font-size: 1.2rem;
+    gap: 1rem;
+    background-color: rgba(5, 40, 90, 0.95);
+    &__item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
