@@ -13,8 +13,6 @@
     "deploy": "npm run build && npx vercel ./dist"
   },
   "dependencies": {
-    "@mdi/js": "^6.7.96",
-    "@mdi/react": "^1.6.0",
     "autoprefixer": "^10.4.4",
     "axios": "^0.27.2",
     "cors": "^2.8.5",
