@@ -45,11 +45,28 @@ const ProjectsDetails = () => {
                 ))}
             </div>
           </div>
-          <div className="projectsDetails__container__link">
-            <a href={selectedProject.url} target="_blank" rel="noreferrer">
-              Découvrir le site
-            </a>
-          </div>
+          {!selectedProject.workInProgress && (
+            <div className="projectsDetails__container__links">
+              <div className="projectsDetails__container__links__link">
+                <a
+                  href={selectedProject.url_demo}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Démo
+                </a>
+              </div>
+              <div className="projectsDetails__container__links__link">
+                <a
+                  href={selectedProject.url_code}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <GoToTop />

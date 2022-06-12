@@ -15,6 +15,10 @@ const Projects = () => {
           Projets
           <div />
         </h2>
+        <p className="projects__intro">
+          Voici un <span>aperçu des projets</span> sur lesquels j&apos;ai eu la
+          chance de travailler jusqu&apos;à aujourd&apos;hui :
+        </p>
       </Fade>
       <ProjectsFilter filter={filter} setFilter={setFilter} />
       <Fade bottom distance="100px">

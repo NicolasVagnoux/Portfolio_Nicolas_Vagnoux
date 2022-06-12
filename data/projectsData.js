@@ -22,7 +22,8 @@ export const projects = [
         img: "/assets/skills_logo/tailwind.svg",
       },
     ],
-    url: "https://star-tour-agency.vercel.app",
+    url_demo: "https://star-tour-agency.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/Star_Tour",
   },
   {
     id: "green-my-mind",
@@ -47,17 +48,18 @@ export const projects = [
         img: "/assets/skills_logo/sass.svg",
       },
     ],
-    url: "https://green-my-mind.vercel.app",
+    url_demo: "https://green-my-mind.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/green-my-mind",
   },
   {
-    id: "green-my-mind",
-    name: "Green My Mind",
-    logo: "/assets/projects/greenmymind-logo.svg",
-    img: "/assets/projects/greenmymind.jpg",
+    id: "star-net",
+    name: "Star Net",
+    logo: "/assets/projects/starnet-logo.png",
+    img: "/assets/projects/star-net.jpg",
     shortDesc:
-      "Projet réalisé dans le cadre d'un Hackathon de 36h sur le thème du développement durable",
+      "[EN COURS] Projet d'études : création d'une plateforme d'apprentissage en ligne sur le thème de la Blockchain",
     longDesc:
-      "Projet réalisé par une équipe de 4 étudiants dans le cadre d'un hackaton de 36h sur le thème de l'écologie. L'objectif était de créer un site qui permette aux visiteurs de tester leurs pratiques Développement Durable via un quiz, et de les sensibiliser à cette thématique.",
+      "[EN COURS] Projet d'études réalisé en 11 semaines par une équipe de 4 étudiants. L'objectif était de créer une plateforme d'apprentissage en e-learning sur le thème de la Blockchain et des cryptomonnaies. Le périmètre du projet comportait à la fois le back-end (création d'une base de données et d'une API) et le front-end (création et design du site).",
     technologies: [
       {
         name: "Html/Css/Js",
@@ -68,11 +70,29 @@ export const projects = [
         img: "/assets/skills_logo/react.svg",
       },
       {
+        name: "TypeScript",
+        img: "/assets/skills_logo/ts.svg",
+      },
+      {
         name: "SASS",
         img: "/assets/skills_logo/sass.svg",
       },
+      {
+        name: "Node JS",
+        img: "/assets/skills_logo/nodejs.svg",
+      },
+      {
+        name: "Express JS",
+        img: "/assets/skills_logo/express.svg",
+      },
+      {
+        name: "SQL / MySQL",
+        img: "/assets/skills_logo/mysql.svg",
+      },
     ],
-    url: "https://green-my-mind.vercel.app",
+    url_demo: "",
+    url_code: "",
+    workInProgress: true,
   },
 ];
 
