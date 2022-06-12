@@ -25,16 +25,15 @@
   align-items: flex-start;
   font-family: "Walter Turncoat";
   @media screen and (max-width: 1000px) {
-    padding-top: 40px;
+    padding-top: 100px;
     justify-content: space-around;
     align-items: center;
   }
-  &__mainHeader,
-  &__mainHeaderMobile {
+  &__mainHeader {
     font-weight: 400;
     letter-spacing: 0.2rem;
     font-size: 6.6rem;
-    color: rgb(248 250 252);
+    color: aliceblue;
     text-shadow: 5px 5px 10px black;
     padding-left: 5rem;
     z-index: 1;
@@ -43,14 +42,12 @@
       font-size: 5.5rem;
     }
     @media screen and (max-width: 1000px) {
-      font-size: 4.8rem;
       padding-left: 1rem;
-      width: 95vw;
-      text-align: center;
+      width: 90vw;
+      line-height: 5.5rem;
     }
   }
-  &__smallHeader,
-  &__smallHeaderMobile {
+  &__smallHeader {
     font-weight: 300;
     font-size: 2.8rem;
     letter-spacing: 1.4px;
@@ -59,16 +56,14 @@
     padding-left: 5rem;
     margin-top: 2.5rem;
     z-index: 1;
-    // width: 100%;
     @media screen and (max-width: 1100px) {
       font-size: 2.6rem;
     }
     @media screen and (max-width: 1000px) {
       font-size: 2.4rem;
       margin-top: 0;
-      padding-left: 0rem;
+      padding-left: 1rem;
       width: 90vw;
-      text-align: center;
     }
   }
   &__downButton {
@@ -97,16 +92,16 @@
 
 // Responsive des titres
 
-.home__mainHeader,
-.home__smallHeader {
-  @media screen and (max-width: 1000px) {
-    display: none;
-  }
-}
+// .home__mainHeader,
+// .home__smallHeader {
+//   @media screen and (max-width: 1000px) {
+//     display: none;
+//   }
+// }
 
-.home__mainHeaderMobile,
-.home__smallHeaderMobile {
-  @media screen and (min-width: 1000px) {
-    display: none;
-  }
-}
+// .home__mainHeaderMobile,
+// .home__smallHeaderMobile {
+//   @media screen and (min-width: 1000px) {
+//     display: none;
+//   }
+// }

@@ -38,7 +38,8 @@ const Contact = () => {
           onSubmit={(e) => handleSubmitMail(e)}
         >
           <p>
-            Vous souhaitez me contacter ? Vous pouvez remplir le formulaire
+            Vous souhaitez <span>me contacter</span> ? Vous pouvez remplir le{" "}
+            <span>formulaire </span>
             suivant :
           </p>
           <div className="contact__form__name">
@@ -96,7 +97,7 @@ const Contact = () => {
           </button>
         </form>
         <p className="contact__prefooter">
-          ﹀ Ou si vous préférez me contacter autrement ﹀
+          ﹀ Ou si vous préférez <span>me contacter </span> autrement ﹀
         </p>
         <div className="contact__footer">
           <div className="contact__footer__logos">

@@ -79,47 +79,54 @@
       align-self: flex-start;
       padding: 1rem 2rem;
       font-size: 1.8rem;
+      font-weight: 300;
     }
     &__technologies {
       align-self: flex-start;
       padding: 2rem;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
+      justify-content: space-around;
       align-items: center;
       font-size: 2rem;
+      text-align: center;
       @media screen and (max-width: 600px) {
         flex-direction: column;
         text-align: center;
         width: 100%;
       }
       &__list {
+        width: 120%;
+        gap: 1rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         transform: scale(0.8);
         @media screen and (max-width: 600px) {
-          flex-direction: column;
+          justify-content: center;
         }
       }
     }
-    &__link {
-      margin: 1rem;
-      padding: 2px 20px;
-      border: 2px solid aliceblue;
-      border-radius: 10px;
-      background-color: rgba(5, 40, 90, 0.3);
-      box-shadow: 0px 0px 25px 2px black;
-      transition: 200ms ease-in-out;
-      a {
-        color: aliceblue;
-        font-family: "Walter Turncoat";
-        text-decoration: none;
-        font-size: 2rem;
-      }
-      &:hover {
-        transform: scale(1.05);
+    &__links {
+      display: flex;
+      justify-content: center;
+      &__link {
+        margin: 1rem;
+        padding: 2px 20px;
+        border: 2px solid aliceblue;
+        border-radius: 10px;
+        background-color: rgba(5, 40, 90, 0.3);
+        box-shadow: 0px 0px 25px 2px black;
+        transition: 200ms ease-in-out;
+        a {
+          color: aliceblue;
+          font-family: "Walter Turncoat";
+          text-decoration: none;
+          font-size: 2rem;
+        }
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
