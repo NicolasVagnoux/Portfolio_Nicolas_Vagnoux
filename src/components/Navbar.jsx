@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
-import Icon from "@mdi/react";
-import { mdiMenuOpen, mdiClose } from "@mdi/js";
 import { navbar, leftbar } from "../../data/navData.js";
 
 const Navbar = () => {
@@ -37,7 +35,7 @@ const Navbar = () => {
               setIsNavMobileOpened(true);
             }}
           >
-            <Icon path={mdiMenuOpen} size={3} color="aliceblue" />
+            O
           </button>
         ) : (
           <button
@@ -46,7 +44,7 @@ const Navbar = () => {
               setIsNavMobileOpened(false);
             }}
           >
-            <Icon path={mdiClose} size={3} color="aliceblue" />
+            X
           </button>
         )}
         <ul className="navbarMobile__list">
