@@ -78,7 +78,9 @@
     font-size: 1.6rem;
     font-weight: 300;
     gap: 1rem;
-    background-color: rgba(5, 40, 90, 0.95);
+    background-color: rgba(5, 40, 90, 0.9);
+    backdrop-filter: blur(2px);
+    border-left: 1px solid aliceblue;
     &__item {
       display: flex;
       justify-content: flex-start;
