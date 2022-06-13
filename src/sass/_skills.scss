@@ -52,6 +52,10 @@
     text-shadow: 4px 4px 8px black;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    @media screen and (max-width: 1000px) {
+      font-size: 1.3rem;
+      width: 85%;
+    }
     span {
       font-style: italic;
       color: rgb(218, 144, 32);
@@ -67,10 +71,12 @@
     }
   }
   &__mobile {
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     @media screen and (min-width: 1200px) {
       display: none;
     }

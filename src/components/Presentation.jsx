@@ -13,7 +13,7 @@ const Presentation = () => {
           </div>
           <p className="presentation__core__text">
             Je m'appelle <span>Nicolas Vagnoux</span>, j'ai 27 ans, et je suis{" "}
-            <span>développeur Web Junior</span>. <br />
+            <span>Développeur Web Junior</span>. <br />
             <br />
             Après quelques années passées dans le monde de la logistique, j'ai
             récemment décidé de me lancer dans une reconversion dans l'univers

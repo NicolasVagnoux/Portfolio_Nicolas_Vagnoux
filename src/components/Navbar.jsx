@@ -44,7 +44,7 @@ const Navbar = () => {
               setIsNavMobileOpened(false);
             }}
           >
-            X
+            ✖
           </button>
         )}
         <ul className="navbarMobile__list">
