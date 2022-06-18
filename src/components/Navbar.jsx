@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import CloseIcon from "@mui/icons-material/Close";
 import { navbar, leftbar } from "../../data/navData.js";
 
 const Navbar = () => {
@@ -35,7 +37,7 @@ const Navbar = () => {
               setIsNavMobileOpened(true);
             }}
           >
-            ☰
+            <MenuOpenIcon />
           </button>
         ) : (
           <button
@@ -44,7 +46,7 @@ const Navbar = () => {
               setIsNavMobileOpened(false);
             }}
           >
-            ✖
+            <CloseIcon />
           </button>
         )}
         <ul className="navbarMobile__list">

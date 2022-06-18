@@ -10,6 +10,14 @@ const BackgroundParticles = () => {
       speed: 0.3,
       maxParticles: 200,
       sizeVariations: 3,
+      responsive: [
+        {
+          breakpoint: 800,
+          options: {
+            maxParticles: 80,
+          },
+        },
+      ],
     });
   }, []);
 

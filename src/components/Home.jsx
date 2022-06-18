@@ -1,27 +1,27 @@
 import React from "react";
-import Typist from "react-typist";
 import { Link } from "react-scroll";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 const Home = () => {
   return (
     <div className="home" id="home">
-      <Typist avgTypingDelay={70} stdTypingDelay={0} cursor={{ show: false }}>
-        <Typist.Delay ms={1000} />
-        <h1 className="home__mainHeader">Nicolas Vagnoux</h1>
-      </Typist>
-      <Typist avgTypingDelay={60} stdTypingDelay={0} cursor={{ show: false }}>
-        <Typist.Delay ms={3000} />
-        <h2 className="home__smallHeader">Développeur Web FullStack Junior</h2>
-      </Typist>
-      <Link
-        activeClass="active"
-        to="presentation"
-        smooth
-        duration={600}
-        className="home__downButton"
-      >
-        <p>﹀ DECOUVREZ MON UNIVERS ﹀</p>
-      </Link>
+      <img className="home__name" src="./assets/myname.svg" alt="myname" />
+      <img className="home__job" src="./assets/myjob.svg" alt="myjob" />
+      <img
+        className="home__nameMobile"
+        src="./assets/myname_mobile.svg"
+        alt="myname"
+      />
+      <img
+        className="home__jobMobile"
+        src="./assets/myjob_mobile.svg"
+        alt="myjob"
+      />
+      <button className="home__downButton" type="button">
+        <Link activeClass="active" to="presentation" smooth duration={600}>
+          <ArrowDownwardIcon />
+        </Link>
+      </button>
     </div>
   );
 };

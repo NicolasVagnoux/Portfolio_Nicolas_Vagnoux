@@ -57,11 +57,14 @@
     padding-top: 1rem;
     padding-right: 1rem;
     color: aliceblue;
-    font-size: 3rem;
     border: none;
     background-color: rgb(5, 40, 90, 0);
     cursor: pointer;
     filter: drop-shadow(1px 1px 3px black);
+    & > * {
+      width: 4rem;
+      height: 4rem;
+    }
   }
   &__list {
     padding-top: 2rem;
