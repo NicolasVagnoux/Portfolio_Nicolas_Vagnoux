@@ -44,8 +44,8 @@ const SkillsItem = ({
             <h3>{title}</h3>
           </div>
           <ul className="skillsItem__softList__core">
-            {softList.map((listItem) => (
-              <li>{listItem}</li>
+            {softList.map((listItem, index) => (
+              <li key={index}>{listItem}</li>
             ))}
           </ul>
         </div>

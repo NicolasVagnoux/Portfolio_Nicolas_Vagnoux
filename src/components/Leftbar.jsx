@@ -5,8 +5,9 @@ import { leftbar } from "../../data/navData";
 const Leftbar = () => {
   return (
     <div className="leftbar">
-      {leftbar.map((navItem) => (
+      {leftbar.map((navItem, index) => (
         <Link
+          key={index}
           activeClass="active"
           to={navItem.link}
           smooth
