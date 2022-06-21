@@ -69,21 +69,20 @@
   &__list {
     padding-top: 2rem;
     padding-left: 1rem;
-    height: 200vh;
+    height: 100vh;
     width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     color: aliceblue;
-    font-family: "Exo 2";
+    font-family: "Walter Turncoat";
     text-shadow: 2px 2px 4px black;
     font-size: 1.6rem;
     font-weight: 300;
     gap: 1rem;
     background-color: rgba(5, 40, 90, 0.9);
     backdrop-filter: blur(2px);
-    border-left: 1px solid aliceblue;
     &__item {
       display: flex;
       justify-content: flex-start;
