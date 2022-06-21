@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import CloseIcon from "@mui/icons-material/Close";
 import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
 import cv from "../../public/assets/files/NicolasVagnouxCV_WebDev.pdf";
@@ -8,19 +9,23 @@ const Contact = () => {
   const [userName, setUserName] = useState("");
   const [userMail, setUserMail] = useState("");
   const [userMessage, setUserMessage] = useState("");
-  const [status, setStatus] = useState("Envoyer");
+  const [status, setStatus] = useState("");
 
-  const handleSubmitMail = (e) => {
+  const handleSubmitMail = async (e) => {
     e.preventDefault();
-    axios.post("https://portfolio-nv.herokuapp.com/", {
-      name: userName,
-      email: userMail,
-      message: userMessage,
-    });
-    setUserName("");
-    setUserMail("");
-    setUserMessage("");
-    setStatus("Message Envoyé !");
+    try {
+      await axios.post("https://portfolio-nv.herokuapp.com/", {
+        name: userName,
+        email: userMail,
+        message: userMessage,
+      });
+      setUserName("");
+      setUserMail("");
+      setUserMessage("");
+      setStatus("OK");
+    } catch (err) {
+      setStatus("Error");
+    }
   };
 
   return (
@@ -91,8 +96,25 @@ const Contact = () => {
           </label>
         </div>
         <button className="contact__form__submit" type="submit">
-          {status}
+          Envoyer
         </button>
+        {status && (
+          <div className="contact__form__result">
+            <button
+              onClick={() => {
+                setStatus("");
+              }}
+              type="button"
+            >
+              <CloseIcon />
+            </button>
+            <p>
+              {status === "OK"
+                ? "Merci, votre message a bien été envoyé ! "
+                : "Désolé, une erreur s'est produite..."}
+            </p>
+          </div>
+        )}
       </form>
       <p className="contact__prefooter">
         ﹀ Ou si vous préférez <span>me contacter </span> autrement ﹀
