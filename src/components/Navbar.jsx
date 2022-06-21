@@ -11,8 +11,9 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <ul className="navbar__list">
-          {navbar.map((navItem) => (
+          {navbar.map((navItem, index) => (
             <Link
+              key={index}
               activeClass="active"
               to={navItem.link}
               smooth
@@ -50,8 +51,9 @@ const Navbar = () => {
           </button>
         )}
         <ul className="navbarMobile__list">
-          {leftbar.map((navItem) => (
+          {leftbar.map((navItem, index) => (
             <Link
+              key={index}
               activeClass="active"
               to={navItem.link}
               smooth

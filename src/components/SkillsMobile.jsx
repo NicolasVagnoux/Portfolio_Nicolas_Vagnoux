@@ -14,7 +14,7 @@ const SkillsMobile = ({ title, img, logoList, softList }) => {
           logoList.map((logo) => <SkillsLogo key={logo.name} {...logo} />)}
       </div>
       <div className="skillsMobile__softList">
-        {softList && softList.map((item) => <li>{item}</li>)}
+        {softList && softList.map((item, index) => <li key={index}>{item}</li>)}
       </div>
     </div>
   );
