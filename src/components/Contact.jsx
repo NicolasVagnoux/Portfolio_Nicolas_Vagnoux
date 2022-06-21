@@ -13,7 +13,7 @@ const Contact = () => {
 
   const handleSubmitMail = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8000/", {
+    axios.post("https://portfolio-nv.herokuapp.com/", {
       name: userName,
       email: userMail,
       message: userMessage,
