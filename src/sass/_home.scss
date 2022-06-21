@@ -58,7 +58,7 @@
     margin-left: 4rem;
     filter: drop-shadow(4px 4px 6px black);
     transform: skew(-5deg);
-    animation: titleAnimation 2s linear;
+    animation: titleAnimation 1.5s linear;
     @media screen and (min-width: 900px) {
       display: none;
     }
@@ -74,7 +74,7 @@
     margin-top: 4rem;
     filter: drop-shadow(4px 4px 4px black);
     transform: skew(-5deg);
-    animation: jobAnimation 4s linear;
+    animation: jobAnimation 3s linear;
     @media screen and (min-width: 900px) {
       display: none;
     }
@@ -92,6 +92,7 @@
     align-self: center;
     z-index: 1;
     cursor: pointer;
+    filter: drop-shadow(4px 4px 6px black);
     transform: scale(2.5);
     animation: upanddown infinite 2s ease-in-out;
     & > * {
