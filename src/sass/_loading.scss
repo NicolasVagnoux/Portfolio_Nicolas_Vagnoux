@@ -1,38 +1,63 @@
 .loading {
   position: fixed;
   z-index: 2;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    20deg,
-    #d7a2b6 0%,
-    #06407a 25%,
-    #06407a 50%,
-    #09376a 100%
-  );
+  background: linear-gradient(20deg, #205e9c 0%, #053362 50%, #041f3d 100%);
   &__rocket {
-    width: 100px;
+    width: 120px;
     filter: drop-shadow(3px 3px 3px black);
-    animation: loading 2.5s linear;
+    animation: loading 3s linear;
   }
-  p {
-    color: aliceblue;
-    font-family: "Exo 2";
-    text-shadow: 3px 3px 6px black;
-    font-size: 2rem;
-    font-weight: 300;
+  &__text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(3px 3px 3px black);
+    animation: zoom 1s ease-in-out infinite;
+    img {
+      height: 60px;
+    }
   }
 }
 
 @keyframes loading {
   0% {
-    transform: translate(-30vw, 0px);
+    transform: translate(-35vw, 0px);
   }
   100% {
-    transform: translate(30vw, 0px);
+    transform: translate(35vw, 0px);
+  }
+}
+
+@keyframes skew {
+  0% {
+    transform: skew(0deg);
+  }
+  45% {
+    transform: skew(0deg);
+  }
+  65% {
+    transform: skew(-20deg) translate(5px);
+  }
+  100% {
+    transform: skew(-20deg) translate(5px);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
   }
 }

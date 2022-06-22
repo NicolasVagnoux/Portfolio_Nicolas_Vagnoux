@@ -30,7 +30,7 @@
     filter: drop-shadow(4px 4px 6px black);
     transform: skew(-5deg);
     animation: titleAnimation 2s linear;
-    animation-delay: 2.2s;
+    animation-delay: 2.7s;
     @media screen and (max-width: 1200px) {
       width: 90vw;
       margin-left: 3rem;
@@ -46,7 +46,7 @@
     filter: drop-shadow(4px 4px 4px black);
     transform: skew(-5deg);
     animation: jobAnimation 4s linear;
-    animation-delay: 2.2s;
+    animation-delay: 2.7s;
     @media screen and (max-width: 1200px) {
       width: 60vw;
       margin-left: 3rem;
@@ -61,6 +61,7 @@
     filter: drop-shadow(4px 4px 6px black);
     transform: skew(-5deg);
     animation: titleAnimation 1.5s linear;
+    animation-delay: 2.7s;
     @media screen and (min-width: 900px) {
       display: none;
     }
@@ -77,6 +78,7 @@
     filter: drop-shadow(4px 4px 4px black);
     transform: skew(-5deg);
     animation: jobAnimation 3s linear;
+    animation-delay: 2.7s;
     @media screen and (min-width: 900px) {
       display: none;
     }
