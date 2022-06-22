@@ -176,6 +176,9 @@
       width: 400px;
       border: 2px solid aliceblue;
       border-radius: 10px;
+      @media screen and (max-width: 800px) {
+        transform: translate(-50%, -50%);
+      }
       p {
         width: 90%;
         margin: 0;
@@ -196,6 +199,16 @@
           width: 40px;
           height: 40px;
           filter: drop-shadow(0px 0px 6px black);
+        }
+      }
+      > div {
+        margin-top: 10px;
+        color: aliceblue;
+        filter: drop-shadow(0px 0px 6px black);
+        & > * {
+          width: 50px;
+          height: 50px;
+          animation: loadingEmail 2s linear infinite;
         }
       }
     }
@@ -288,4 +301,16 @@
   transform: translate(10px, -17px) !important;
   font-size: 1rem !important;
   text-shadow: 2px 2px 4px black;
+}
+
+@keyframes loadingEmail {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }

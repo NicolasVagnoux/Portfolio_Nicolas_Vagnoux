@@ -25,6 +25,7 @@
         }
       }
     ],
+    "react/jsx-no-useless-fragment": "off",
     "no-console": "off",
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [0],
