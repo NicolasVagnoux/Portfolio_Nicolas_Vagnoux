@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import CloseIcon from "@mui/icons-material/Close";
+import LoopIcon from "@mui/icons-material/Loop";
 import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
 import cv from "../../public/assets/files/NicolasVagnouxCV_WebDev.pdf";
@@ -14,6 +15,7 @@ const Contact = () => {
   const handleSubmitMail = async (e) => {
     e.preventDefault();
     try {
+      setStatus("Pending");
       await axios.post("https://portfolio-nv.herokuapp.com/", {
         name: userName,
         email: userMail,
@@ -27,6 +29,7 @@ const Contact = () => {
       setStatus("Error");
     }
   };
+  console.log(status);
 
   return (
     <div className="contact" id="contact">
@@ -100,19 +103,26 @@ const Contact = () => {
         </button>
         {status && (
           <div className="contact__form__result">
-            <button
-              onClick={() => {
-                setStatus("");
-              }}
-              type="button"
-            >
-              <CloseIcon />
-            </button>
+            {status !== "Pending" && (
+              <button
+                onClick={() => {
+                  setStatus("");
+                }}
+                type="button"
+              >
+                <CloseIcon />
+              </button>
+            )}
             <p>
-              {status === "OK"
-                ? "Merci, votre message a bien été envoyé ! "
-                : "Désolé, une erreur s'est produite..."}
+              {status === "Pending" && "Votre message est en cours d'envoi"}
+              {status === "OK" && "Merci, votre message a bien été envoyé !"}
+              {status === "Error" && "Désolé, une erreur s'est produite..."}
             </p>
+            {status === "Pending" && (
+              <div>
+                <LoopIcon />
+              </div>
+            )}
           </div>
         )}
       </form>

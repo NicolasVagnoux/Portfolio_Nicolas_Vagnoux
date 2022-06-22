@@ -1,0 +1,38 @@
+.loading {
+  position: fixed;
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    20deg,
+    #d7a2b6 0%,
+    #06407a 25%,
+    #06407a 50%,
+    #09376a 100%
+  );
+  &__rocket {
+    width: 100px;
+    filter: drop-shadow(3px 3px 3px black);
+    animation: loading 2.5s linear;
+  }
+  p {
+    color: aliceblue;
+    font-family: "Exo 2";
+    text-shadow: 3px 3px 6px black;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translate(-30vw, 0px);
+  }
+  100% {
+    transform: translate(30vw, 0px);
+  }
+}
