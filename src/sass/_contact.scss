@@ -132,6 +132,9 @@
         transform: translate(20px, 17px);
         height: 0.4rem;
       }
+      &__input {
+        resize: none;
+      }
       &__input:focus {
         outline: none;
         border: 2px solid rgb(50, 90, 210);
