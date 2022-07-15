@@ -31,7 +31,8 @@
     "react/function-component-definition": [0],
     "import/extensions": [0, "ignorePackages"],
     "react/no-array-index-key": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off"
   },
   "settings": {
     "settings": {

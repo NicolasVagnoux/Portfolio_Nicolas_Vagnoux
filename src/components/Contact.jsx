@@ -29,7 +29,6 @@ const Contact = () => {
       setStatus("Error");
     }
   };
-  console.log(status);
 
   return (
     <div className="contact" id="contact">

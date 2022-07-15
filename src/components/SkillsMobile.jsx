@@ -23,8 +23,8 @@ const SkillsMobile = ({ title, img, logoList, softList }) => {
 SkillsMobile.propTypes = {
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  logoList: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-  softList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  logoList: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  softList: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default SkillsMobile;
