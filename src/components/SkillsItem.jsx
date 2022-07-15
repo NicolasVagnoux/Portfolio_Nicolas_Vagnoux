@@ -57,8 +57,8 @@ const SkillsItem = ({
 SkillsItem.propTypes = {
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
-  logoList: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)).isRequired,
-  softList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  logoList: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)),
+  softList: PropTypes.arrayOf(PropTypes.string),
   openedItem: PropTypes.string.isRequired,
   setOpenedItem: PropTypes.func.isRequired,
 };

@@ -56,15 +56,39 @@ const ProjectsDetails = () => {
                   Démo
                 </a>
               </div>
-              <div className="projectsDetails__container__links__link">
-                <a
-                  href={selectedProject.url_code}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Code
-                </a>
-              </div>
+              {!selectedProject.url_code2 && (
+                <div className="projectsDetails__container__links__link">
+                  <a
+                    href={selectedProject.url_code}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Code
+                  </a>
+                </div>
+              )}
+              {selectedProject.url_code2 && (
+                <>
+                  <div className="projectsDetails__container__links__link">
+                    <a
+                      href={selectedProject.url_code}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Code Front
+                    </a>
+                  </div>
+                  <div className="projectsDetails__container__links__link">
+                    <a
+                      href={selectedProject.url_code2}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Code Back
+                    </a>
+                  </div>
+                </>
+              )}
             </div>
           )}
         </div>

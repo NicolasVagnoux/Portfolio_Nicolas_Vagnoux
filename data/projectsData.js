@@ -94,6 +94,49 @@ export const projects = [
     url_code: "",
     workInProgress: true,
   },
+  {
+    id: "upside",
+    name: "Upside",
+    logo: "/assets/projects/upside-logo.png",
+    img: "/assets/projects/upside.jpg",
+    shortDesc:
+      "Projet réalisé dans le cadre d'un Hackaton de 48h : création d'une plateforme de gestion de projet",
+    longDesc:
+      "Projet réalisé par une équipe de 6 étudiants dans le cadre d'un Hackaton fullstack de 48h. L'objectif était de créer une plateforme de gestion de projet permettant de répondre à une problématique donnée par l'entreprise Apside concernant l'amélioration de la communication et de la gestion de projet au sein de ses différentes filiales.",
+    technologies: [
+      {
+        name: "Html/Css/Js",
+        img: "/assets/skills_logo/htmlcssjs.png",
+      },
+      {
+        name: "React JS",
+        img: "/assets/skills_logo/react.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/assets/skills_logo/ts.svg",
+      },
+      {
+        name: "Tailwind",
+        img: "/assets/skills_logo/tailwind.svg",
+      },
+      {
+        name: "Node JS",
+        img: "/assets/skills_logo/nodejs.svg",
+      },
+      {
+        name: "Express JS",
+        img: "/assets/skills_logo/express.svg",
+      },
+      {
+        name: "SQL / MySQL",
+        img: "/assets/skills_logo/mysql.svg",
+      },
+    ],
+    url_demo: "https://upside.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/Upside-front",
+    url_code2: "https://github.com/NicolasVagnoux/Upside-back",
+  },
 ];
 
 export const technologies = [
