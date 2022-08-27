@@ -57,9 +57,9 @@ export const projects = [
     logo: "/assets/projects/starnet-logo.png",
     img: "/assets/projects/star-net.jpg",
     shortDesc:
-      "[EN COURS] Projet d'études : création d'une plateforme d'apprentissage en ligne sur le thème de la Blockchain",
+      "Projet d'études : création d'une plateforme d'apprentissage en ligne sur le thème de la Blockchain",
     longDesc:
-      "[EN COURS] Projet d'études réalisé en 9 semaines par une équipe de 4 étudiants. L'objectif était de créer une plateforme d'apprentissage en e-learning sur le thème de la Blockchain et des cryptomonnaies. Le périmètre du projet comportait à la fois le back-end (création d'une base de données et d'une API) et le front-end (création et design du site).",
+      "Projet d'études réalisé en 9 semaines par une équipe de 4 étudiants. L'objectif était de créer une plateforme d'apprentissage en e-learning sur le thème de la Blockchain et des cryptomonnaies. Le périmètre du projet comportait à la fois le back-end (création d'une base de données et d'une API) et le front-end (création et design du site).",
     technologies: [
       {
         name: "Html/Css/Js",
@@ -90,9 +90,9 @@ export const projects = [
         img: "/assets/skills_logo/mysql.svg",
       },
     ],
-    url_demo: "",
-    url_code: "",
-    workInProgress: true,
+    url_demo: "https://star-net-front.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/star-net-front",
+    url_code2: "https://github.com/NicolasVagnoux/star-net-back",
   },
   {
     id: "upside",
