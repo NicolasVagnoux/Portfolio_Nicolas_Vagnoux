@@ -35,11 +35,15 @@ export const back = [
     img: "./assets/skills_logo/nodejs.svg",
   },
   {
+    name: "TypeScript",
+    img: "./assets/skills_logo/ts.svg",
+  },
+  {
     name: "Express JS",
     img: "./assets/skills_logo/express.svg",
   },
   {
-    name: "SQL / MySQL",
+    name: "MySQL",
     img: "./assets/skills_logo/mysql.svg",
   },
 ];

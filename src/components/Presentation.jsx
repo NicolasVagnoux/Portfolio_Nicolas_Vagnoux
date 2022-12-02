@@ -10,7 +10,7 @@ const Presentation = () => {
           <img src="./assets/nv.jpg" alt="nv_pic" />
         </div>
         <p className="presentation__core__text">
-          Je m'appelle <span>Nicolas Vagnoux</span>, j'ai 27 ans, et je suis{" "}
+          Je m'appelle <span>Nicolas Vagnoux</span>, j'ai 28 ans, et je suis{" "}
           <span>Développeur Web Junior</span>. <br />
           <br />
           Après quelques années passées dans le monde de la logistique, j'ai

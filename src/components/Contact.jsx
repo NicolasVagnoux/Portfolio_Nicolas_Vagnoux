@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       setStatus("Pending");
-      await axios.post("https://portfolio-nv.herokuapp.com/", {
+      await axios.post("https://portfolio-nv.onrender.com/", {
         name: userName,
         email: userMail,
         message: userMessage,

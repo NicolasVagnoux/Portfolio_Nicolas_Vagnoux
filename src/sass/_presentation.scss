@@ -51,14 +51,14 @@
         font-family: "Walter Turncoat";
       }
       img {
-        width: 300px;
-        border-radius: 150px;
+        width: 280px;
+        border-radius: 140px;
         filter: drop-shadow(0px 0px 15px black);
       }
     }
     &__text {
       font-family: "Exo 2";
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       font-weight: 200;
       @media screen and (max-width: 1000px) {
         font-size: 1.3rem;

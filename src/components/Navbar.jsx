@@ -10,6 +10,7 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
+        <img className="navbar__logo" src="./assets/NV-logo1b.png" alt="NV" />
         <ul className="navbar__list">
           {navbar.map((navItem, index) => (
             <Link
@@ -26,6 +27,10 @@ const Navbar = () => {
         </ul>
       </div>
 
+      <Link activeClass="active" to="home" smooth duration={600}>
+        <img className="logoMobile" src="./assets/NV-logo1b.png" alt="NV" />
+      </Link>
+      <div className="logoBackground" />
       <div
         className={`navbarMobile ${
           isNavMobileOpened && "navbarMobile--opened"
