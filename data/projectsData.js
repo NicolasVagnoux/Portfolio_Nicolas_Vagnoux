@@ -86,7 +86,7 @@ export const projects = [
         img: "/assets/skills_logo/express.svg",
       },
       {
-        name: "SQL / MySQL",
+        name: "MySQL",
         img: "/assets/skills_logo/mysql.svg",
       },
     ],
@@ -129,7 +129,7 @@ export const projects = [
         img: "/assets/skills_logo/express.svg",
       },
       {
-        name: "SQL / MySQL",
+        name: "MySQL",
         img: "/assets/skills_logo/mysql.svg",
       },
     ],
@@ -147,5 +147,5 @@ export const technologies = [
   "Tailwind",
   "Node JS",
   "Express JS",
-  "SQL / MySQL",
+  "MySQL",
 ];
