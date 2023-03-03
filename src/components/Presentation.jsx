@@ -6,7 +6,7 @@ const Presentation = () => {
     <div className="presentation" id="presentation">
       <div className="presentation__core">
         <div className="presentation__core__picture">
-          <p>Hello there !</p>
+          <img src="./assets/hello_there.svg" alt="hello there" />
           <img src="./assets/nv.jpg" alt="nv_pic" />
         </div>
         <p className="presentation__core__text">
@@ -16,7 +16,8 @@ const Presentation = () => {
           Après quelques années passées dans le monde de la logistique, j'ai
           récemment décidé de me lancer dans une reconversion dans l'univers de
           la tech, à travers une formation intensive de{" "}
-          <span>Développeur Web FullStack</span>.<br />
+          <span>Développeur Web FullStack</span>, conclue par l'obtention du
+          titre professionnel <span>Développeur Web et Web Mobile</span>.<br />
           <br />
           Désormais jeune développeur dans un domaine qui me passionne
           réellement, je souhaite avant tout acquérir de l'

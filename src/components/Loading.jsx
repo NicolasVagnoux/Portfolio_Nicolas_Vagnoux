@@ -23,10 +23,11 @@ const Loading = () => {
             alt="rocket"
           />
           <div className="loading__text">
-            <img src="./assets/loading_text1.svg" alt="en" />
+            {/* <img src="./assets/loading_text1.svg" alt="en" />
             <img src="./assets/loading_text2.svg" alt="attente" />
             <img src="./assets/loading_text3.svg" alt="du" />
-            <img src="./assets/loading_text4.svg" alt="décollage..." />
+            <img src="./assets/loading_text4.svg" alt="décollage..." /> */}
+            <img src="./assets/loading_text_v2.svg" alt="loading" />
           </div>
         </div>
       )}

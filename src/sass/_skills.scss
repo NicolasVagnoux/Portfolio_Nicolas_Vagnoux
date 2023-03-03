@@ -31,6 +31,20 @@
     text-align: center;
     display: flex;
     align-items: center;
+    img:nth-child(2) {
+      height: 5rem;
+      @media (max-width: 750px) {
+        display: none;
+      }
+    }
+    img:nth-child(3) {
+      height: 8rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      @media (min-width: 750px) {
+        display: none;
+      }
+    }
     div {
       border-bottom: 2px solid aliceblue;
       height: 2px;

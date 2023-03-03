@@ -46,6 +46,10 @@ export const back = [
     name: "MySQL",
     img: "./assets/skills_logo/mysql.svg",
   },
+  {
+    name: "PostgreSQL",
+    img: "./assets/skills_logo/postgresql.svg",
+  },
 ];
 
 export const tools = [
