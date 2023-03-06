@@ -137,6 +137,49 @@ export const projects = [
     url_code: "https://github.com/NicolasVagnoux/Upside-front",
     url_code2: "https://github.com/NicolasVagnoux/Upside-back",
   },
+  {
+    id: "guess-the-number",
+    name: "Guess the number",
+    logo: "/assets/projects/guess-the-number-logo.png",
+    img: "/assets/projects/guess-the-number.jpg",
+    shortDesc:
+      "Création d'un jeu de devinette de nombres avec gestion d'un tableau de scores",
+    longDesc:
+      "Projet personnel fullstack (React + Node). L'objectif était de créer un jeu simple en Javascript dont le but est de deviner un nombre entre 1 et 100 en suivant les indications fournies. Un système de leaderboard a été mis en place, via un stockage des scores en base de données.",
+    technologies: [
+      {
+        name: "Html/Css/Js",
+        img: "/assets/skills_logo/htmlcssjs.png",
+      },
+      {
+        name: "React JS",
+        img: "/assets/skills_logo/react.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/assets/skills_logo/ts.svg",
+      },
+      {
+        name: "SASS",
+        img: "/assets/skills_logo/sass.svg",
+      },
+      {
+        name: "Node JS",
+        img: "/assets/skills_logo/nodejs.svg",
+      },
+      {
+        name: "Express JS",
+        img: "/assets/skills_logo/express.svg",
+      },
+      {
+        name: "PostgreSQL",
+        img: "/assets/skills_logo/postgresql.svg",
+      },
+    ],
+    url_demo: "https://guess-the-number-lilac.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/Guess_the_number",
+    url_code2: "https://github.com/NicolasVagnoux/Guess_the_number_back",
+  },
 ];
 
 export const technologies = [
@@ -148,4 +191,5 @@ export const technologies = [
   "Node JS",
   "Express JS",
   "MySQL",
+  "PostgreSQL",
 ];

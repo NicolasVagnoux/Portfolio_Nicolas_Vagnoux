@@ -10,7 +10,8 @@ const Skills = () => {
     <div className="skills" id="skills">
       <h2 className="skills__title">
         <div />
-        Compétences, Outils
+        <img src="./assets/skills_title.svg" alt="compétences outils" />
+        <img src="./assets/skills_title_mobile.svg" alt="compétences outils" />
         <div />
       </h2>
       <p className="skills__intro">

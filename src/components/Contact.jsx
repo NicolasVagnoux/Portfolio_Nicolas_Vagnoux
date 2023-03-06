@@ -34,7 +34,7 @@ const Contact = () => {
     <div className="contact" id="contact">
       <h1 className="contact__title">
         <div />
-        Contact
+        <img src="./assets/contact_title.svg" alt="contact" />
         <div />
       </h1>
       <form

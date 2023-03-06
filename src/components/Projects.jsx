@@ -10,7 +10,7 @@ const Projects = () => {
     <div className="projects" id="projects">
       <h2 className="projects__title">
         <div />
-        Projets
+        <img src="./assets/projects_title.svg" alt="projects" />
         <div />
       </h2>
       <p className="projects__intro">
