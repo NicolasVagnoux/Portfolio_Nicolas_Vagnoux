@@ -180,6 +180,36 @@ export const projects = [
     url_code: "https://github.com/NicolasVagnoux/Guess_the_number",
     url_code2: "https://github.com/NicolasVagnoux/Guess_the_number_back",
   },
+  {
+    id: "mypokeapp2",
+    name: "My PokéApp",
+    logo: "/assets/projects/mypokeapp-logo.svg",
+    img: "/assets/projects/mypokeapp2.jpg",
+    shortDesc:
+      "Création d'une application 'encyclopédie Pokémon' dynamique et interactive, basée sur une API publique",
+    longDesc:
+      "Projet personnel Front-end (React). L'objectif était de créer une application reprenant le principe du Pokédex, une encyclopédie basée sur l'univers de la célèbre licence de jeux vidéos Pokémon. Utilisant les données envoyées par l'API publique 'PokéBuild API', l'application se veut dynamique et interactive, et propose des fonctionnalités de recherche, de filtres multiples, ou encore la possibilité de composer sa propre équipe en fonction des caractéristiques propres à chaque créature.",
+    technologies: [
+      {
+        name: "Html/Css/Js",
+        img: "/assets/skills_logo/htmlcssjs.png",
+      },
+      {
+        name: "React JS",
+        img: "/assets/skills_logo/react.svg",
+      },
+      {
+        name: "TypeScript",
+        img: "/assets/skills_logo/ts.svg",
+      },
+      {
+        name: "SASS",
+        img: "/assets/skills_logo/sass.svg",
+      }
+    ],
+    url_demo: "https://mypokeapp2.vercel.app",
+    url_code: "https://github.com/NicolasVagnoux/myPokeApp2"
+  }
 ];
 
 export const technologies = [
