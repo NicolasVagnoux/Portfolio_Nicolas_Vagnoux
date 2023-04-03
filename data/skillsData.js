@@ -77,6 +77,10 @@ export const tools = [
     name: "Trello",
     img: "./assets/skills_logo/trello.svg",
   },
+  {
+    name: "Wordpress",
+    img: "./assets/skills_logo/wordpress.svg",
+  }
 ];
 
 export const soft = [
