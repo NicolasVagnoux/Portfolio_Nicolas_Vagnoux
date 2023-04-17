@@ -14,7 +14,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -40,7 +40,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -66,7 +66,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -109,7 +109,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -129,11 +129,11 @@ export const projects = [
         img: "/assets/skills_logo/express.svg",
       },
       {
-        name: "MySQL",
-        img: "/assets/skills_logo/mysql.svg",
+        name: "PostgreSQL",
+        img: "/assets/skills_logo/postgresql.svg",
       },
     ],
-    url_demo: "https://upside.vercel.app",
+    url_demo: "https://upside-by-apside.vercel.app",
     url_code: "https://github.com/NicolasVagnoux/Upside-front",
     url_code2: "https://github.com/NicolasVagnoux/Upside-back",
   },
@@ -152,7 +152,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -184,7 +184,7 @@ export const projects = [
     id: "mypokeapp2",
     name: "My PokéApp",
     logo: "/assets/projects/mypokeapp-logo.svg",
-    img: "/assets/projects/mypokeapp2.jpg",
+    img: "/assets/projects/mypokeapp.jpg",
     shortDesc:
       "Création d'une application 'encyclopédie Pokémon' dynamique et interactive, basée sur une API publique",
     longDesc:
@@ -195,7 +195,7 @@ export const projects = [
         img: "/assets/skills_logo/htmlcssjs.png",
       },
       {
-        name: "React JS",
+        name: "React",
         img: "/assets/skills_logo/react.svg",
       },
       {
@@ -205,16 +205,16 @@ export const projects = [
       {
         name: "SASS",
         img: "/assets/skills_logo/sass.svg",
-      }
+      },
     ],
     url_demo: "https://mypokeapp2.vercel.app",
-    url_code: "https://github.com/NicolasVagnoux/myPokeApp2"
-  }
+    url_code: "https://github.com/NicolasVagnoux/myPokeApp2",
+  },
 ];
 
 export const technologies = [
   "Html/Css/Js",
-  "React JS",
+  "React",
   "TypeScript",
   "SASS",
   "Tailwind",

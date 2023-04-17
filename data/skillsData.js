@@ -80,7 +80,7 @@ export const tools = [
   {
     name: "Wordpress",
     img: "./assets/skills_logo/wordpress.svg",
-  }
+  },
 ];
 
 export const soft = [

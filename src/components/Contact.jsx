@@ -4,7 +4,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import LoopIcon from "@mui/icons-material/Loop";
 import logos from "../../data/contactData";
 import ContactLogo from "./ContactLogo";
-import cv from "../../public/assets/files/NicolasVagnouxCV_WebDev.pdf";
+import cv from "../../public/assets/files/NicolasVagnouxCV_2023.pdf";
 
 const Contact = () => {
   const [userName, setUserName] = useState("");
