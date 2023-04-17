@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       />
       <button className="home__downButton" type="button">
         <Link activeClass="active" to="presentation" smooth duration={600}>
-          <ArrowDownwardIcon />
+          <KeyboardArrowDownRoundedIcon />
         </Link>
       </button>
     </div>
