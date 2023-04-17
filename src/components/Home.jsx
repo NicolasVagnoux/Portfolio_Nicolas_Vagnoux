@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 
 const Home = () => {
   return (
