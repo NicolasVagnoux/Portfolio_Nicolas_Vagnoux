@@ -7,7 +7,7 @@ const Presentation = () => {
       <div className="presentation__core">
         <div className="presentation__core__picture">
           <img src="./assets/hello_there.svg" alt="hello there" />
-          <img src="./assets/nv.jpg" alt="nv_pic" />
+          <img src="./assets/nv2.jpg" alt="nv_picture" />
         </div>
         <p className="presentation__core__text">
           Je m'appelle <span>Nicolas Vagnoux</span>, j'ai 28 ans, et je suis{" "}
