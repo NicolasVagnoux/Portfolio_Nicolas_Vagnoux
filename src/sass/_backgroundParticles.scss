@@ -7,4 +7,28 @@
   right: 0;
   z-index: 0;
   opacity: 1;
+  @media (max-width: 440px) {
+    width: 104% !important;
+  }
+  @media (max-width: 430px) {
+    width: 106% !important;
+  }
+  @media (max-width: 420px) {
+    width: 108% !important;
+  }
+  @media (max-width: 415px) {
+    width: 110% !important;
+  }
+  @media (max-width: 410px) {
+    width: 112% !important;
+  }
+  @media (max-width: 400px) {
+    width: 114% !important;
+  }
+  @media (max-width: 390px) {
+    width: 117% !important;
+  }
+  @media (max-width: 380px) {
+    width: 120% !important;
+  }
 }
