@@ -90,7 +90,7 @@ export const projects = [
         img: "/assets/skills_logo/mysql.svg",
       },
     ],
-    url_demo: "https://star-net-front.vercel.app",
+    url_demo: "https://rave-by-starnet.vercel.app",
     url_code: "https://github.com/NicolasVagnoux/star-net-front",
     url_code2: "https://github.com/NicolasVagnoux/star-net-back",
   },
