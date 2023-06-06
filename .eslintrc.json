@@ -32,7 +32,8 @@
     "import/extensions": [0, "ignorePackages"],
     "react/no-array-index-key": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/require-default-props": "off"
+    "react/require-default-props": "off",
+    "import/no-unresolved": "off"
   },
   "settings": {
     "settings": {
